@@ -1,0 +1,15 @@
+index:
+    path: /
+    controller: App\Controller\DefaultController::index
+contact:
+    path: /contact
+    controller: App\Controller\DefaultController::contact
+competences:
+    path: /competences
+    controller: App\Controller\DefaultController::competences
+experiences:
+    path: /experiences
+    controller: App\Controller\DefaultController::experiences
+projets:
+    path: /projets
+    controller: App\Controller\DefaultController::projets

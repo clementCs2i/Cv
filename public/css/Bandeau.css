@@ -1,0 +1,67 @@
+.fond{
+    background-color: #343a40;
+    height: 100%;
+}
+.rowTemplate{
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+}
+
+.textNameRes {
+    font-size: 1.8rem;
+  }
+  .textJobRes {
+    font-size: 1.1rem;
+  }
+
+  .ColorRed{
+    color: #fb383b; 
+  }
+
+  .TableInfo{
+    
+    bottom: 0;
+    font-size: 0.6rem;
+  }
+  @media (max-width: 1350px) {
+    .textNameRes {
+        font-size: 1.4rem;
+      
+      }
+      .textJobRes {
+        font-size: 1rem;
+      }
+    }
+    @media (max-width: 1050px) {
+        .textNameRes {
+            font-size: 1.3rem;
+           
+          }
+          .textJobRes {
+            font-size: 0.8rem;
+          }
+        }
+@media (max-width: 800px) {
+    .textNameRes {
+        font-size: 1rem;
+      }
+      .textJobRes {
+        font-size: 0.8rem;
+      }
+    }
+@media (max-width: 600px) {
+    .textNameRes {
+        font-size: 1.1rem;
+      }
+    }
+@media (max-width: 532px) {
+        .textNameRes {
+            font-size: 0.9rem;
+          }
+          .textJobRes {
+            font-size: 0.6rem;
+          }
+    }
+  
