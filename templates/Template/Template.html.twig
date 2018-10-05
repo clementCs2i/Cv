@@ -28,51 +28,29 @@
             {% include 'NavBar/NavbarTop.html.twig' %}
     
             <div class="rowTemplate">
-                <div class="col-2  fond">
+                <div class="col-4 col-sm-3 col-lg-2 col-xl-2 fond">
                 <div class="text-center">
                 <img src="{{ asset('images/téléchargement.png') }}" class="img-fluid rounded-circle" alt="Responsive image">
                 <blockquote class="blockquote text-center">
   <p class="mb-0 text-white textNameRes">Clément SAVY</p>
   <cite class=" textJobRes ColorRed">Développeur logiciel</cite>
-<p class="mb-0 text-white ">Email : Msavy.clement@gmail.com</p>
-</blockquote>
 
-                </div>
+   </blockquote>
+</div>
+
+<div class="positionTexte">
+<p class="mb-0 text-white  TableInfo textBnadeau"><span class="ColorRed">Age :</span> 23 ans</p>
+<p class="mb-0 text-white  TableInfo textBnadeau"><span class="ColorRed">Date de naissance :</span> 12/04/1995</p>
+<p class="mb-0 text-white  TableInfo textBnadeau"><span class="ColorRed">Email :</span> Msavy.clement@gmail.com</p>
+<p class="mb-0 text-white  TableInfo textBnadeau"><span class="ColorRed">Tel :</span> 0635346338</p>
+<p class="mb-0 text-white  TableInfo textBnadeau"><span class="ColorRed">Diplome :</span> Bac +5 Master MS2I</p>
+<p class="mb-0 text-white  TableInfo textBnadeau"><span class="ColorRed">Adresse :</span> Lorient 56670</p>
+</div>
                  
             
-  <table class="text-white TableInfo table" >
-    <thead>
-      <tr>
-        
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Age</td>
-        <td>23 ans</td>
-        
-      </tr>
-      <tr>
-        <td>Email</td>
-        <td>Msavy.clement@gmail.com</td>
-        
-      </tr>
-      <tr>
-        <td>Tel</td>
-        <td>0635346338</td>
-      </tr>
-        <tr>
-        <td>Diplome</td>
-        <td>BAC +5</td>
-      </tr>
-       <tr>
-        <td>Adresse</td>
-        <td>Lorient 56100</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-            
+
+   
+                </div>      
                 
              <div class="col-6 col-sm-3">
                 {% block body %}

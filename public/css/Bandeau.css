@@ -15,16 +15,21 @@
   .textJobRes {
     font-size: 1.1rem;
   }
+  .textBnadeau{
+    font-size: 0.70rem;
+  }
 
   .ColorRed{
     color: #fb383b; 
   }
 
   .TableInfo{
-    
-    bottom: 0;
-    font-size: 0.6rem;
+    border-top: 1px solid #dee2e6;
+    padding: 8;
   }
+ .positionTexte{
+
+ }
   @media (max-width: 1350px) {
     .textNameRes {
         font-size: 1.4rem;
@@ -32,6 +37,9 @@
       }
       .textJobRes {
         font-size: 1rem;
+      }
+      .textBnadeau{
+        font-size: 0.70rem;
       }
     }
     @media (max-width: 1050px) {
@@ -42,6 +50,9 @@
           .textJobRes {
             font-size: 0.8rem;
           }
+          .textBnadeau{
+            font-size: 0.70rem;
+          }
         }
 @media (max-width: 800px) {
     .textNameRes {
@@ -50,10 +61,16 @@
       .textJobRes {
         font-size: 0.8rem;
       }
+      .textBnadeau{
+        font-size: 0.55rem;
+      }
     }
 @media (max-width: 600px) {
     .textNameRes {
         font-size: 1.1rem;
+      }
+      .textBnadeau{
+        font-size: 0.60rem;
       }
     }
 @media (max-width: 532px) {
@@ -62,6 +79,9 @@
           }
           .textJobRes {
             font-size: 0.6rem;
+          }
+          .textBnadeau{
+            font-size: 0.60rem;
           }
     }
   

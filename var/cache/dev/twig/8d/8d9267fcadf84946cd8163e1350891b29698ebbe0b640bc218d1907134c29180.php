@@ -59,8 +59,7 @@ class __TwigTemplate_d160f7cbf6249fc6999729c49714714ce281c7914c52637fe5462da5837
 
         // line 7
         echo "
-
-
+accueil du site
 
 ";
         
@@ -92,8 +91,7 @@ class __TwigTemplate_d160f7cbf6249fc6999729c49714714ce281c7914c52637fe5462da5837
  {% endblock %}
 {% block body %}
 
-
-
+accueil du site
 
 {% endblock %}
 ", "Pages/Accueil.html.twig", "C:\\wamp64\\www\\CV\\templates\\Pages\\Accueil.html.twig");

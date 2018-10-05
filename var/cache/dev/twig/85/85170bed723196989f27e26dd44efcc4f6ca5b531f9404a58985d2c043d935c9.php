@@ -64,7 +64,7 @@ class __TwigTemplate_91e2c672d9ddd1124c2830d6e74e691b6f498fc6dbb5d936989327a89f0
         // line 29
         echo "    
             <div class=\"rowTemplate\">
-                <div class=\"col-2  fond\">
+                <div class=\"col-4 col-sm-3 col-lg-2 col-xl-2 fond\">
                 <div class=\"text-center\">
                 <img src=\"";
         // line 33
@@ -73,58 +73,36 @@ class __TwigTemplate_91e2c672d9ddd1124c2830d6e74e691b6f498fc6dbb5d936989327a89f0
                 <blockquote class=\"blockquote text-center\">
   <p class=\"mb-0 text-white textNameRes\">Clément SAVY</p>
   <cite class=\" textJobRes ColorRed\">Développeur logiciel</cite>
-<p class=\"mb-0 text-white \">Email : Msavy.clement@gmail.com</p>
-</blockquote>
 
-                </div>
+   </blockquote>
+</div>
+
+<div class=\"positionTexte\">
+<p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Age :</span> 23 ans</p>
+<p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Date de naissance :</span> 12/04/1995</p>
+<p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Email :</span> Msavy.clement@gmail.com</p>
+<p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Tel :</span> 0635346338</p>
+<p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Diplome :</span> Bac +5 Master MS2I</p>
+<p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Adresse :</span> Lorient 56670</p>
+</div>
                  
             
-  <table class=\"text-white TableInfo table\" >
-    <thead>
-      <tr>
-        
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Age</td>
-        <td>23 ans</td>
-        
-      </tr>
-      <tr>
-        <td>Email</td>
-        <td>Msavy.clement@gmail.com</td>
-        
-      </tr>
-      <tr>
-        <td>Tel</td>
-        <td>0635346338</td>
-      </tr>
-        <tr>
-        <td>Diplome</td>
-        <td>BAC +5</td>
-      </tr>
-       <tr>
-        <td>Adresse</td>
-        <td>Lorient 56100</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-            
+
+   
+                </div>      
                 
              <div class=\"col-6 col-sm-3\">
                 ";
-        // line 78
+        // line 56
         $this->displayBlock('body', $context, $blocks);
-        // line 79
+        // line 57
         echo "</div>
             </div>   
         <footer id=\"footer\">
                 ";
-        // line 82
+        // line 60
         $this->displayBlock('foot', $context, $blocks);
-        // line 86
+        // line 64
         echo "        </footer>
         </body>
     </html>";
@@ -217,26 +195,26 @@ class __TwigTemplate_91e2c672d9ddd1124c2830d6e74e691b6f498fc6dbb5d936989327a89f0
 
     }
 
-    // line 78
+    // line 56
     public function block_body($context, array $blocks = array())
     {
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        // line 79
+        // line 57
         echo "                ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
     }
 
-    // line 82
+    // line 60
     public function block_foot($context, array $blocks = array())
     {
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "foot"));
 
-        // line 83
+        // line 61
         echo "                  
   
                 ";
@@ -257,7 +235,7 @@ class __TwigTemplate_91e2c672d9ddd1124c2830d6e74e691b6f498fc6dbb5d936989327a89f0
 
     public function getDebugInfo()
     {
-        return array (  240 => 83,  234 => 82,  227 => 79,  221 => 78,  213 => 24,  207 => 23,  197 => 21,  191 => 20,  181 => 17,  175 => 16,  166 => 13,  162 => 12,  157 => 11,  151 => 10,  143 => 6,  137 => 5,  128 => 86,  126 => 82,  121 => 79,  119 => 78,  71 => 33,  65 => 29,  63 => 28,  59 => 26,  56 => 23,  54 => 20,  51 => 19,  49 => 16,  46 => 15,  44 => 10,  40 => 8,  38 => 5,  33 => 2,);
+        return array (  218 => 61,  212 => 60,  205 => 57,  199 => 56,  191 => 24,  185 => 23,  175 => 21,  169 => 20,  159 => 17,  153 => 16,  144 => 13,  140 => 12,  135 => 11,  129 => 10,  121 => 6,  115 => 5,  106 => 64,  104 => 60,  99 => 57,  97 => 56,  71 => 33,  65 => 29,  63 => 28,  59 => 26,  56 => 23,  54 => 20,  51 => 19,  49 => 16,  46 => 15,  44 => 10,  40 => 8,  38 => 5,  33 => 2,);
     }
 
     public function getSourceContext()
@@ -292,51 +270,29 @@ class __TwigTemplate_91e2c672d9ddd1124c2830d6e74e691b6f498fc6dbb5d936989327a89f0
             {% include 'NavBar/NavbarTop.html.twig' %}
     
             <div class=\"rowTemplate\">
-                <div class=\"col-2  fond\">
+                <div class=\"col-4 col-sm-3 col-lg-2 col-xl-2 fond\">
                 <div class=\"text-center\">
                 <img src=\"{{ asset('images/téléchargement.png') }}\" class=\"img-fluid rounded-circle\" alt=\"Responsive image\">
                 <blockquote class=\"blockquote text-center\">
   <p class=\"mb-0 text-white textNameRes\">Clément SAVY</p>
   <cite class=\" textJobRes ColorRed\">Développeur logiciel</cite>
-<p class=\"mb-0 text-white \">Email : Msavy.clement@gmail.com</p>
-</blockquote>
 
-                </div>
+   </blockquote>
+</div>
+
+<div class=\"positionTexte\">
+<p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Age :</span> 23 ans</p>
+<p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Date de naissance :</span> 12/04/1995</p>
+<p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Email :</span> Msavy.clement@gmail.com</p>
+<p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Tel :</span> 0635346338</p>
+<p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Diplome :</span> Bac +5 Master MS2I</p>
+<p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Adresse :</span> Lorient 56670</p>
+</div>
                  
             
-  <table class=\"text-white TableInfo table\" >
-    <thead>
-      <tr>
-        
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Age</td>
-        <td>23 ans</td>
-        
-      </tr>
-      <tr>
-        <td>Email</td>
-        <td>Msavy.clement@gmail.com</td>
-        
-      </tr>
-      <tr>
-        <td>Tel</td>
-        <td>0635346338</td>
-      </tr>
-        <tr>
-        <td>Diplome</td>
-        <td>BAC +5</td>
-      </tr>
-       <tr>
-        <td>Adresse</td>
-        <td>Lorient 56100</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-            
+
+   
+                </div>      
                 
              <div class=\"col-6 col-sm-3\">
                 {% block body %}
