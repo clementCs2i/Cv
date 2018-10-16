@@ -8,11 +8,11 @@ namespace App\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Form\FormBuilder;
 use Twig\Environment;
-use App\Entity\Task;
+use App\Entity\Email;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
-use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\EmailType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 /**
  * Description of DefaultController
@@ -26,33 +26,34 @@ class DefaultController extends AbstractController{
     }
     
     public function contact(Environment $twig, Request $request) {
-        $task = new Task();
+       // just setup a fresh $task object (remove the dummy data)
+    $Email = new Email();
 
+    $form = $this->createFormBuilder($Email)
+        ->add('AdresseMail', EmailType::class)
+        ->add('Message', TextareaType::class)
+        ->add('save', SubmitType::class, array('label' => 'Create Task'))
+        ->getForm();
 
-        $form = $this->createFormBuilder($task)
-            ->add('task', TextType::class)
-            ->add('dueDate', DateType::class)
-            ->add('save', SubmitType::class, array('label' => 'Create Task'))
-            ->getForm();
+    $form->handleRequest($request);
 
-            if ($form->isSubmitted()) {
-                // $form->getData() holds the submitted values
-                // but, the original `$task` variable has also been updated
-                $task = $form->getData();
-        
-                // ... perform some action, such as saving the task to the database
-                // for example, if Task is a Doctrine entity, save it!
-                // $entityManager = $this->getDoctrine()->getManager();
-                // $entityManager->persist($task);
-                // $entityManager->flush();
-        
-                return $this->redirectToRoute('competences');
-            }
-        
+    if ($form->isSubmitted() && $form->isValid()) {
+        // $form->getData() holds the submitted values
+        // but, the original `$task` variable has also been updated
+        $task = $form->getData();
 
-        return $this->render('Pages/Contact.html.twig', array(
-            'form' => $form->createView(),
-        ));
+        // ... perform some action, such as saving the task to the database
+        // for example, if Task is a Doctrine entity, save it!
+        // $entityManager = $this->getDoctrine()->getManager();
+        // $entityManager->persist($task);
+        // $entityManager->flush();
+
+        return $this->redirectToRoute('competences');
+    }
+
+    return $this->render('Pages/contact.html.twig', array(
+        'form' => $form->createView(),
+    ));
     }
 
     public function competences(Environment $twig) {
