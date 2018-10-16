@@ -4,8 +4,19 @@ namespace App\Entity;
 
 class Email
 {
+    protected $NomPrenom;
     protected $AdresseMail;
     protected $Message;
+
+    public function getNomPrenom()
+    {
+        return $this->NomPrenom;
+    }
+
+    public function setNomPrenom($NomPrenom)
+    {
+        $this->NomPrenom = $NomPrenom;
+    }
 
     public function getAdresseMail()
     {

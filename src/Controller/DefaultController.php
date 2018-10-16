@@ -13,6 +13,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 /**
  * Description of DefaultController
@@ -25,29 +27,41 @@ class DefaultController extends AbstractController{
         return new Response($twig->render('Pages/Accueil.html.twig'));
     }
     
-    public function contact(Environment $twig, Request $request) {
+    public function contact(Environment $twig, Request $request, \Swift_Mailer $mailer) {
        // just setup a fresh $task object (remove the dummy data)
     $Email = new Email();
 
     $form = $this->createFormBuilder($Email)
-        ->add('AdresseMail', EmailType::class)
-        ->add('Message', TextareaType::class)
-        ->add('save', SubmitType::class, array('label' => 'Create Task'))
+        ->add('NomPrenom', TextType::class, array('attr' => array('class' => 'form-control',
+                                                                  'placeholder'=>'Enter votre nom et prénom')))
+        ->add('AdresseMail', EmailType::class, array('attr' => array('class' => 'form-control',
+                                                                  'placeholder'=>'Enter votre email')))
+        ->add('Message', TextareaType::class, array('attr' => array('class' => 'form-control',
+                                                                  'placeholder'=>'Enter votre message')))
+        ->add('envoyer', SubmitType::class, array('label' => 'Envoyer email',
+                                                  'attr' => array('class' => 'btn btn-primary')))
         ->getForm();
 
     $form->handleRequest($request);
 
     if ($form->isSubmitted() && $form->isValid()) {
-        // $form->getData() holds the submitted values
-        // but, the original `$task` variable has also been updated
-        $task = $form->getData();
+        $Email = $form->getData();
+        $message = (new \Swift_Message('Méssage site web CV'))
+        ->setFrom($Email->getAdresseMail())
+        ->setTo('msavy.clement@gmail.com')
+        ->setBody(
+            $this->renderView(
+                'Emails/EmailConatct.html.twig',
+                array('Name' => $Email->getNomPrenom(),
+                      'Email' => $Email->getAdresseMail(),
+                      'Message' => $Email->getmessage()
+                )
+            ),
+            'text/html'
+        )
+    ;
 
-        // ... perform some action, such as saving the task to the database
-        // for example, if Task is a Doctrine entity, save it!
-        // $entityManager = $this->getDoctrine()->getManager();
-        // $entityManager->persist($task);
-        // $entityManager->flush();
-
+    $mailer->send($message);
         return $this->redirectToRoute('competences');
     }
 

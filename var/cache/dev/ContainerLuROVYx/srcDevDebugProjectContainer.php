@@ -1,6 +1,6 @@
 <?php
 
-namespace Container33z8rMO;
+namespace ContainerLuROVYx;
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -63,13 +63,18 @@ class srcDevDebugProjectContainer extends Container
             'filesystem' => 'getFilesystemService.php',
             'form.factory' => 'getForm_FactoryService.php',
             'routing.loader' => 'getRouting_LoaderService.php',
+            'services_resetter' => 'getServicesResetterService.php',
             'session' => 'getSessionService.php',
+            'swiftmailer.mailer.default' => 'getSwiftmailer_Mailer_DefaultService.php',
+            'swiftmailer.mailer.default.plugin.messagelogger' => 'getSwiftmailer_Mailer_Default_Plugin_MessageloggerService.php',
+            'swiftmailer.mailer.default.transport.real' => 'getSwiftmailer_Mailer_Default_Transport_RealService.php',
             'twig' => 'getTwigService.php',
             'twig.controller.exception' => 'getTwig_Controller_ExceptionService.php',
             'twig.controller.preview_error' => 'getTwig_Controller_PreviewErrorService.php',
         );
-
-        $this->aliases = array();
+        $this->aliases = array(
+            'mailer' => 'swiftmailer.mailer.default',
+        );
 
         $this->privates['service_container'] = function () {
             include_once $this->targetDirs[3].'\\vendor\\symfony\\framework-bundle\\Controller\\ControllerNameParser.php';
@@ -208,6 +213,18 @@ class srcDevDebugProjectContainer extends Container
         $instance->addListener('kernel.exception', array(0 => function () {
             return ($this->privates['twig.exception_listener'] ?? $this->load('getTwig_ExceptionListenerService.php'));
         }, 1 => 'onKernelException'), -128);
+        $instance->addListener('kernel.exception', array(0 => function () {
+            return ($this->privates['swiftmailer.email_sender.listener'] ?? $this->load('getSwiftmailer_EmailSender_ListenerService.php'));
+        }, 1 => 'onException'), 0);
+        $instance->addListener('kernel.terminate', array(0 => function () {
+            return ($this->privates['swiftmailer.email_sender.listener'] ?? $this->load('getSwiftmailer_EmailSender_ListenerService.php'));
+        }, 1 => 'onTerminate'), 0);
+        $instance->addListener('console.error', array(0 => function () {
+            return ($this->privates['swiftmailer.email_sender.listener'] ?? $this->load('getSwiftmailer_EmailSender_ListenerService.php'));
+        }, 1 => 'onException'), 0);
+        $instance->addListener('console.terminate', array(0 => function () {
+            return ($this->privates['swiftmailer.email_sender.listener'] ?? $this->load('getSwiftmailer_EmailSender_ListenerService.php'));
+        }, 1 => 'onTerminate'), 0);
 
         return $instance;
     }
@@ -380,6 +397,7 @@ class srcDevDebugProjectContainer extends Container
         'session.save_path' => false,
         'debug.container.dump' => false,
         'twig.default_path' => false,
+        'swiftmailer.spool.default.memory.path' => false,
     );
     private $dynamicParameters = array();
 
@@ -408,11 +426,16 @@ class srcDevDebugProjectContainer extends Container
                     'path' => ($this->targetDirs[3].'\\vendor\\symfony\\twig-bundle'),
                     'namespace' => 'Symfony\\Bundle\\TwigBundle',
                 ),
+                'SwiftmailerBundle' => array(
+                    'path' => ($this->targetDirs[3].'\\vendor\\symfony\\swiftmailer-bundle'),
+                    'namespace' => 'Symfony\\Bundle\\SwiftmailerBundle',
+                ),
             ); break;
             case 'kernel.secret': $value = $this->getEnv('APP_SECRET'); break;
             case 'session.save_path': $value = ($this->targetDirs[0].'/sessions'); break;
             case 'debug.container.dump': $value = ($this->targetDirs[0].'/srcDevDebugProjectContainer.xml'); break;
             case 'twig.default_path': $value = ($this->targetDirs[3].'/templates'); break;
+            case 'swiftmailer.spool.default.memory.path': $value = ($this->targetDirs[0].'/swiftmailer/spool/default'); break;
             default: throw new InvalidArgumentException(sprintf('The dynamic parameter "%s" must be defined.', $name));
         }
         $this->loadedDynamicParameters[$name] = true;
@@ -434,6 +457,7 @@ class srcDevDebugProjectContainer extends Container
             'kernel.bundles' => array(
                 'FrameworkBundle' => 'Symfony\\Bundle\\FrameworkBundle\\FrameworkBundle',
                 'TwigBundle' => 'Symfony\\Bundle\\TwigBundle\\TwigBundle',
+                'SwiftmailerBundle' => 'Symfony\\Bundle\\SwiftmailerBundle\\SwiftmailerBundle',
             ),
             'kernel.charset' => 'UTF-8',
             'kernel.container_class' => 'srcDevDebugProjectContainer',
@@ -474,6 +498,34 @@ class srcDevDebugProjectContainer extends Container
             'twig.form.resources' => array(
                 0 => 'form_div_layout.html.twig',
             ),
+            'swiftmailer.mailer.default.transport.name' => 'smtp',
+            'swiftmailer.mailer.default.transport.smtp.encryption' => 'ssl',
+            'swiftmailer.mailer.default.transport.smtp.port' => 465,
+            'swiftmailer.mailer.default.transport.smtp.host' => 'smtp.gmail.com',
+            'swiftmailer.mailer.default.transport.smtp.username' => 'msavy.clement@gmail.com',
+            'swiftmailer.mailer.default.transport.smtp.password' => 'Floici56',
+            'swiftmailer.mailer.default.transport.smtp.auth_mode' => 'login',
+            'swiftmailer.mailer.default.transport.smtp.timeout' => 30,
+            'swiftmailer.mailer.default.transport.smtp.source_ip' => NULL,
+            'swiftmailer.mailer.default.transport.smtp.local_domain' => NULL,
+            'swiftmailer.mailer.default.transport.smtp.stream_options' => array(
+                'ssl' => array(
+                    'allow_self_signed' => true,
+                    'verify_peer' => false,
+                    'verify_peer_name' => false,
+                ),
+            ),
+            'swiftmailer.mailer.default.spool.enabled' => true,
+            'swiftmailer.mailer.default.plugin.impersonate' => NULL,
+            'swiftmailer.mailer.default.single_address' => NULL,
+            'swiftmailer.mailer.default.delivery.enabled' => true,
+            'swiftmailer.spool.enabled' => true,
+            'swiftmailer.delivery.enabled' => true,
+            'swiftmailer.single_address' => NULL,
+            'swiftmailer.mailers' => array(
+                'default' => 'swiftmailer.mailer.default',
+            ),
+            'swiftmailer.default_mailer' => 'default',
             'console.command.ids' => array(
 
             ),
