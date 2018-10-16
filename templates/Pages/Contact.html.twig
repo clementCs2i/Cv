@@ -8,8 +8,35 @@
 {% block body %}
 
 
-contact
+<div id="moncercle" >
+<img src="{{ asset('images/envelope.png') }} "class="imageContact" >
+</div>
 
+<div  class="BlocTitre text-center ">
 
+<div  class="avantTitre">
+</div>
+<p class="h1 titre">Me contacter </p>
+<div  class="ApresTitre ">
+</div>
+</div>
+ <div class="h5 textContact text-center" >Mail: <span class="ColorRed">msavy.clement@gmail.com</span>  Tel : <span class="ColorRed">0635346338</span></div>    
 
+<div  class="FormContact">
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Adresse email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter votre email">
+  </div>
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">Votre méssage</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Envoyer</button>
+</form>
+</div>
+{{ form_start(form) }}
+{{ form_widget(form) }}
+{{ form_end(form) }}
 {% endblock %}

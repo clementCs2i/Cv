@@ -1,6 +1,9 @@
 .fond{
     background-color: #343a40;
-    height: 100%;
+    height: 91.5%;
+}
+.Contents{
+  background-color: #efefef;
 }
 .rowTemplate{
     display:-ms-flexbox;
@@ -27,9 +30,7 @@
     border-top: 1px solid #dee2e6;
     padding: 8;
   }
- .positionTexte{
-
- }
+ 
   @media (max-width: 1350px) {
     .textNameRes {
         font-size: 1.4rem;
