@@ -79,3 +79,24 @@ width: 330px;
  color:   #343a40;
  margin-top: 56px;
 }
+@media (max-width: 550px) {
+    .h1, h1 {
+        font-size: 2rem;
+    }
+    .h5, h5 {
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 375px) {
+    .h1, h1 {
+        font-size: 1rem;
+    }
+    .h5, h5 {
+        font-size: 0.5rem;
+    }
+    .titre {
+        margin-left: 18px;
+        float: left;
+        margin-top: 12px;
+    }
+}

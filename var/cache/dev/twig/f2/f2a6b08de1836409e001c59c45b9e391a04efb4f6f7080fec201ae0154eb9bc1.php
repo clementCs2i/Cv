@@ -61,6 +61,9 @@ class __TwigTemplate_c1603cdf3ae8ff262612fa8f1017aaeb0fd6db226f958ff71a33fe0e968
         echo "
 accueil du site
 
+
+ 
+
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -93,7 +96,10 @@ accueil du site
 
 accueil du site
 
+
+ 
+
 {% endblock %}
-", "Pages/Accueil.html.twig", "C:\\wamp64\\www\\CV\\templates\\Pages\\Accueil.html.twig");
+", "Pages/Accueil.html.twig", "C:\\Users\\Clément\\Cv\\templates\\Pages\\Accueil.html.twig");
     }
 }

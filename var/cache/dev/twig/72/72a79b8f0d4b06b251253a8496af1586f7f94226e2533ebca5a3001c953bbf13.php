@@ -1,6 +1,6 @@
 <?php
 
-/* Pages/projets.html.twig */
+/* Pages/Projets.html.twig */
 class __TwigTemplate_27e334af47c56b08d2b6a065ab012ede0e188a6667621e406e059cc8d29ff5ca extends Twig_Template
 {
     private $source;
@@ -12,7 +12,7 @@ class __TwigTemplate_27e334af47c56b08d2b6a065ab012ede0e188a6667621e406e059cc8d29
         $this->source = $this->getSourceContext();
 
         // line 2
-        $this->parent = $this->loadTemplate("Template/template.html.twig", "Pages/projets.html.twig", 2);
+        $this->parent = $this->loadTemplate("Template/template.html.twig", "Pages/Projets.html.twig", 2);
         $this->blocks = array(
             'head' => array($this, 'block_head'),
             'body' => array($this, 'block_body'),
@@ -27,7 +27,7 @@ class __TwigTemplate_27e334af47c56b08d2b6a065ab012ede0e188a6667621e406e059cc8d29
     protected function doDisplay(array $context, array $blocks = array())
     {
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "Pages/projets.html.twig"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "Pages/Projets.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
@@ -72,7 +72,7 @@ projet
 
     public function getTemplateName()
     {
-        return "Pages/projets.html.twig";
+        return "Pages/Projets.html.twig";
     }
 
     public function isTraitable()
@@ -100,6 +100,6 @@ projet
 
 
 {% endblock %}
-", "Pages/projets.html.twig", "C:\\wamp64\\www\\CV\\templates\\Pages\\Projets.html.twig");
+", "Pages/Projets.html.twig", "C:\\Users\\Clément\\Cv\\templates\\Pages\\Projets.html.twig");
     }
 }

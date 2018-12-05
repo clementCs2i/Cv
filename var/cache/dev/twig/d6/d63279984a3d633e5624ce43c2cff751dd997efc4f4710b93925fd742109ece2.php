@@ -1,6 +1,6 @@
 <?php
 
-/* Pages/competences.html.twig */
+/* Pages/Competences.html.twig */
 class __TwigTemplate_d378652aedddf5cecf568ffd2f29ccaa4a5b5502d8e1799f8af1c6a508b18410 extends Twig_Template
 {
     private $source;
@@ -12,7 +12,7 @@ class __TwigTemplate_d378652aedddf5cecf568ffd2f29ccaa4a5b5502d8e1799f8af1c6a508b
         $this->source = $this->getSourceContext();
 
         // line 3
-        $this->parent = $this->loadTemplate("Template/template.html.twig", "Pages/competences.html.twig", 3);
+        $this->parent = $this->loadTemplate("Template/template.html.twig", "Pages/Competences.html.twig", 3);
         $this->blocks = array(
             'head' => array($this, 'block_head'),
             'body' => array($this, 'block_body'),
@@ -27,7 +27,7 @@ class __TwigTemplate_d378652aedddf5cecf568ffd2f29ccaa4a5b5502d8e1799f8af1c6a508b
     protected function doDisplay(array $context, array $blocks = array())
     {
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "Pages/competences.html.twig"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "Pages/Competences.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
@@ -71,7 +71,7 @@ competences
 
     public function getTemplateName()
     {
-        return "Pages/competences.html.twig";
+        return "Pages/Competences.html.twig";
     }
 
     public function isTraitable()
@@ -99,6 +99,6 @@ competences
 
 
 {% endblock %}
-", "Pages/competences.html.twig", "C:\\wamp64\\www\\CV\\templates\\Pages\\Competences.html.twig");
+", "Pages/Competences.html.twig", "C:\\Users\\Clément\\Cv\\templates\\Pages\\Competences.html.twig");
     }
 }
