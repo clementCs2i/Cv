@@ -7,7 +7,14 @@
 {% endblock %}
 {% block body %}
 
-
+{% if app.session.flashBag.has('success') %}
+        <div class="alert alert-success">
+            {% for msg in app.session.flashBag.get('success') %}
+                {{ msg }}
+            {% endfor %}
+        </div>
+    {% endif %}
+    
 <div id="moncercle" >
 <img src="{{ asset('images/envelope.png') }} "class="imageContact" >
 </div>
@@ -27,7 +34,7 @@
 <form>
   <div class="form-group">
     <label for="exampleInputEmail1">Votre nom et prénom</label>
-{{ form_widget(form.NomPrenom) }}
+  {{ form_widget(form.NomPrenom) }}
  </div>
  <div class="form-group">
     <label for="exampleFormControlTextarea1">Votre email</label>
@@ -40,5 +47,7 @@
    {{ form_widget(form.envoyer) }}
 </form>
 </div>
+
 {{ form_end(form) }}
+
 {% endblock %}

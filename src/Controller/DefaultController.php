@@ -30,16 +30,21 @@ class DefaultController extends AbstractController{
     public function contact(Environment $twig, Request $request, \Swift_Mailer $mailer) {
        // just setup a fresh $task object (remove the dummy data)
     $Email = new Email();
-
+    $Email->setMessage('');
     $form = $this->createFormBuilder($Email)
         ->add('NomPrenom', TextType::class, array('attr' => array('class' => 'form-control',
-                                                                  'placeholder'=>'Enter votre nom et prénom')))
+                                                                  'placeholder'=>'Enter votre nom et prénom',
+                                                                  'value'=>"")))
         ->add('AdresseMail', EmailType::class, array('attr' => array('class' => 'form-control',
-                                                                  'placeholder'=>'Enter votre email')))
+                                                                  'placeholder'=>'Enter votre email',
+                                                                  'value'=>"")))
         ->add('Message', TextareaType::class, array('attr' => array('class' => 'form-control',
+                                                                  'value' => 'abcdef',
                                                                   'placeholder'=>'Enter votre message')))
         ->add('envoyer', SubmitType::class, array('label' => 'Envoyer email',
-                                                  'attr' => array('class' => 'btn btn-primary')))
+                                                  'attr' => array('class' => 'btn btn-primary',
+                                                                  'data-toggle' => 'modal',
+                                                                  'data-target' => '#basicExampleModal')))
         ->getForm();
 
     $form->handleRequest($request);
@@ -54,7 +59,7 @@ class DefaultController extends AbstractController{
                 'Emails/EmailConatct.html.twig',
                 array('Name' => $Email->getNomPrenom(),
                       'Email' => $Email->getAdresseMail(),
-                      'Message' => $Email->getmessage()
+                      'Message' => $Email->getMessage()
                 )
             ),
             'text/html'
@@ -62,7 +67,15 @@ class DefaultController extends AbstractController{
     ;
 
     $mailer->send($message);
-        return $this->redirectToRoute('competences');
+   
+    $request->getSession()
+        ->getFlashBag()
+        ->add('success', 'Merci, Votre méssage a été correctement envoyé')
+    ;
+
+    return new Response($twig->render('Pages/contact.html.twig', array(
+        'form' => $form->createView(),
+    )));
     }
 
     return $this->render('Pages/contact.html.twig', array(
