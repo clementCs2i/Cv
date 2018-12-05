@@ -30,7 +30,30 @@
     border-top: 1px solid #dee2e6;
     padding: 8;
   }
- 
+  @media (min-width: 1900px) {
+    .textNameRes {
+        font-size: 1.9rem;
+      
+      }
+      .textJobRes {
+        font-size: 1.3rem;
+      }
+      .textBnadeau{
+        font-size: 1rem;
+      }
+    }
+  @media (max-width: 1550px) {
+    .textNameRes {
+        font-size: 1.9rem;
+      
+      }
+      .textJobRes {
+        font-size: 1.3rem;
+      }
+      .textBnadeau{
+        font-size: 0.80rem;
+      }
+    }
   @media (max-width: 1350px) {
     .textNameRes {
         font-size: 1.4rem;
