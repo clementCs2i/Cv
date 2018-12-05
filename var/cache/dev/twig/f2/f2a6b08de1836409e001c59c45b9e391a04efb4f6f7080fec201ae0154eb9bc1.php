@@ -62,7 +62,7 @@ class __TwigTemplate_c1603cdf3ae8ff262612fa8f1017aaeb0fd6db226f958ff71a33fe0e968
 accueil du site
 
 
- 
+ test
 
 ";
         
@@ -97,7 +97,7 @@ accueil du site
 accueil du site
 
 
- 
+ test
 
 {% endblock %}
 ", "Pages/Accueil.html.twig", "C:\\Users\\Clément\\Cv\\templates\\Pages\\Accueil.html.twig");
