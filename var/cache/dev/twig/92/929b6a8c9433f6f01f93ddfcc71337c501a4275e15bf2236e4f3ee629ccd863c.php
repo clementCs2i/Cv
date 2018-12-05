@@ -1,6 +1,6 @@
 <?php
 
-/* NavBar/NavbarTop.html.twig */
+/* NavBar/NavBarTop.html.twig */
 class __TwigTemplate_720c3eb88d9131fb867101284e17fbf6db0a5b41f5e14086db5a4ba05010adac extends Twig_Template
 {
     private $source;
@@ -20,7 +20,7 @@ class __TwigTemplate_720c3eb88d9131fb867101284e17fbf6db0a5b41f5e14086db5a4ba0501
     protected function doDisplay(array $context, array $blocks = array())
     {
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NavBar/NavbarTop.html.twig"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NavBar/NavBarTop.html.twig"));
 
         // line 1
         echo "
@@ -72,7 +72,7 @@ class __TwigTemplate_720c3eb88d9131fb867101284e17fbf6db0a5b41f5e14086db5a4ba0501
 
     public function getTemplateName()
     {
-        return "NavBar/NavbarTop.html.twig";
+        return "NavBar/NavBarTop.html.twig";
     }
 
     public function getDebugInfo()
@@ -123,6 +123,6 @@ class __TwigTemplate_720c3eb88d9131fb867101284e17fbf6db0a5b41f5e14086db5a4ba0501
 
 
 
-", "NavBar/NavbarTop.html.twig", "C:\\wamp64\\www\\CV\\templates\\NavBar\\NavBarTop.html.twig");
+", "NavBar/NavBarTop.html.twig", "C:\\Users\\Clément\\Cv\\templates\\NavBar\\NavBarTop.html.twig");
     }
 }

@@ -59,6 +59,6 @@ class __TwigTemplate_0702c74f89cc8ea862f83af42f61a1e498100cf1e60fb8a19141e40d7e4
         return new Twig_Source("<?xml version=\"1.0\" encoding=\"{{ _charset }}\" ?>
 
 <error code=\"{{ status_code }}\" message=\"{{ status_text }}\" />
-", "@Twig/Exception/error.xml.twig", "C:\\wamp64\\www\\CV\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\error.xml.twig");
+", "@Twig/Exception/error.xml.twig", "C:\\Users\\Clément\\Cv\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\error.xml.twig");
     }
 }

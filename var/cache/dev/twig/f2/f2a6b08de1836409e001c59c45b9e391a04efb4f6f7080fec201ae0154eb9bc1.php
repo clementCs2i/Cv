@@ -94,6 +94,6 @@ accueil du site
 accueil du site
 
 {% endblock %}
-", "Pages/Accueil.html.twig", "C:\\wamp64\\www\\CV\\templates\\Pages\\Accueil.html.twig");
+", "Pages/Accueil.html.twig", "C:\\Users\\Clément\\Cv\\templates\\Pages\\Accueil.html.twig");
     }
 }

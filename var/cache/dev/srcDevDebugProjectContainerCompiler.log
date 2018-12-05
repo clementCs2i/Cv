@@ -68,7 +68,6 @@ Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed
 Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed service "Swift_Spool"; reason: private alias.
 Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed service "swiftmailer.plugin.messagelogger"; reason: private alias.
 Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed service "swiftmailer.mailer"; reason: private alias.
-Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed service "swiftmailer.transport"; reason: private alias.
 Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed service "Swift_Mailer"; reason: private alias.
 Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed service "Swift_Transport"; reason: private alias.
 Symfony\Component\DependencyInjection\Compiler\RemovePrivateAliasesPass: Removed service "argument_resolver.controller_locator"; reason: private alias.
@@ -82,6 +81,8 @@ Symfony\Component\DependencyInjection\Compiler\ReplaceAliasByActualDefinitionPas
 Symfony\Component\DependencyInjection\Compiler\ReplaceAliasByActualDefinitionPass: Changed reference of service "router_listener" previously pointing to "router.default" to "router".
 Symfony\Component\DependencyInjection\Compiler\ReplaceAliasByActualDefinitionPass: Changed reference of service "Symfony\Bundle\FrameworkBundle\Controller\RedirectController" previously pointing to "router.default" to "router".
 Symfony\Component\DependencyInjection\Compiler\ReplaceAliasByActualDefinitionPass: Changed reference of service "twig.extension.routing" previously pointing to "router.default" to "router".
+Symfony\Component\DependencyInjection\Compiler\ReplaceAliasByActualDefinitionPass: Changed reference of service "swiftmailer.mailer.abstract" previously pointing to "swiftmailer.mailer.default.transport.spool" to "swiftmailer.transport".
+Symfony\Component\DependencyInjection\Compiler\ReplaceAliasByActualDefinitionPass: Changed reference of service "swiftmailer.mailer.default" previously pointing to "swiftmailer.mailer.default.transport.spool" to "swiftmailer.transport".
 Symfony\Component\DependencyInjection\Compiler\ReplaceAliasByActualDefinitionPass: Changed reference of service ".service_locator.ychIlgF" previously pointing to "router.default" to "router".
 Symfony\Component\DependencyInjection\Compiler\ReplaceAliasByActualDefinitionPass: Changed reference of service ".service_locator.tdKlFgs" previously pointing to "router.default" to "router".
 Symfony\Component\DependencyInjection\Compiler\RemoveAbstractDefinitionsPass: Removed service "cache.adapter.system"; reason: abstract.
@@ -123,8 +124,8 @@ Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inl
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "session.storage.native" to "session".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "session.attribute_bag" to "session".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "session.flash_bag" to "session".
-Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service ".1_NativeFileSessionHandler~g5ViI.9" to "session.handler.native_file".
-Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service ".2_ServiceLocator~g5ViI.9" to "session_listener".
+Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service ".1_NativeFileSessionHandler~jf0QkNI" to "session.handler.native_file".
+Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service ".2_ServiceLocator~jf0QkNI" to "session_listener".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "form.extension" to "form.registry".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service ".service_locator.G7nCPaT" to "form.extension".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "form.choice_list_factory.default" to "form.choice_list_factory.property_access".
@@ -164,13 +165,11 @@ Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inl
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "fragment.handler" to "twig.runtime.httpkernel".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service ".service_locator.WOSHvMv" to "twig.runtime_loader".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "twig.form.engine" to "twig.form.renderer".
-Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service ".1_Swift_Transport_Esmtp_Auth_CramMd5Authenticator~GRzA5D_" to "swiftmailer.mailer.default.transport.authhandler".
-Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service ".2_Swift_Transport_Esmtp_Auth_LoginAuthenticator~GRzA5D_" to "swiftmailer.mailer.default.transport.authhandler".
-Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service ".3_Swift_Transport_Esmtp_Auth_PlainAuthenticator~GRzA5D_" to "swiftmailer.mailer.default.transport.authhandler".
-Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service ".4_Swift_Transport_Esmtp_Auth_NTLMAuthenticator~GRzA5D_" to "swiftmailer.mailer.default.transport.authhandler".
+Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service ".1_Swift_Transport_Esmtp_Auth_CramMd5Authenticator~.uHql7B" to "swiftmailer.mailer.default.transport.authhandler".
+Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service ".2_Swift_Transport_Esmtp_Auth_LoginAuthenticator~.uHql7B" to "swiftmailer.mailer.default.transport.authhandler".
+Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service ".3_Swift_Transport_Esmtp_Auth_PlainAuthenticator~.uHql7B" to "swiftmailer.mailer.default.transport.authhandler".
+Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service ".4_Swift_Transport_Esmtp_Auth_NTLMAuthenticator~.uHql7B" to "swiftmailer.mailer.default.transport.authhandler".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "swiftmailer.transport.replacementfactory" to "swiftmailer.mailer.default.transport.buffer".
-Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "swiftmailer.mailer.default.transport.spool" to "swiftmailer.mailer.default".
-Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "swiftmailer.mailer.default.spool.memory" to "swiftmailer.mailer.default.transport.spool".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service ".service_locator.ychIlgF" to ".service_locator.ychIlgF.App\Controller\DefaultController".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service ".service_locator.oNnsU_h" to ".service_locator.oNnsU_h.router.default".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service ".service_locator.tdKlFgs" to ".service_locator.tdKlFgs.router.cache_warmer".
@@ -180,6 +179,7 @@ Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inl
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "swiftmailer.mailer.default.transport.buffer" to "swiftmailer.mailer.default.transport.real".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "swiftmailer.mailer.default.transport.authhandler" to "swiftmailer.mailer.default.transport.real".
 Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "swiftmailer.transport.configurator.default" to "swiftmailer.mailer.default.transport.real".
+Symfony\Component\DependencyInjection\Compiler\InlineServiceDefinitionsPass: Inlined service "swiftmailer.mailer.default.spool.memory" to "swiftmailer.transport".
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "controller_resolver"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "argument_metadata_factory"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "argument_resolver"; reason: unused.
@@ -190,8 +190,8 @@ Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Remo
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "cache.validator"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "cache.serializer"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "cache.annotations"; reason: unused.
-Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service ".2_ServiceLocator~g5ViI.9"; reason: unused.
-Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service ".1_NativeFileSessionHandler~g5ViI.9"; reason: unused.
+Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service ".2_ServiceLocator~jf0QkNI"; reason: unused.
+Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service ".1_NativeFileSessionHandler~jf0QkNI"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "session.storage.native"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "session.storage.php_bridge"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "session.flash_bag"; reason: unused.
@@ -239,10 +239,10 @@ Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Remo
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "twig.runtime_loader"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "twig.extension.form"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "twig.form.engine"; reason: unused.
-Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service ".4_Swift_Transport_Esmtp_Auth_NTLMAuthenticator~GRzA5D_"; reason: unused.
-Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service ".3_Swift_Transport_Esmtp_Auth_PlainAuthenticator~GRzA5D_"; reason: unused.
-Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service ".2_Swift_Transport_Esmtp_Auth_LoginAuthenticator~GRzA5D_"; reason: unused.
-Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service ".1_Swift_Transport_Esmtp_Auth_CramMd5Authenticator~GRzA5D_"; reason: unused.
+Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service ".4_Swift_Transport_Esmtp_Auth_NTLMAuthenticator~.uHql7B"; reason: unused.
+Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service ".3_Swift_Transport_Esmtp_Auth_PlainAuthenticator~.uHql7B"; reason: unused.
+Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service ".2_Swift_Transport_Esmtp_Auth_LoginAuthenticator~.uHql7B"; reason: unused.
+Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service ".1_Swift_Transport_Esmtp_Auth_CramMd5Authenticator~.uHql7B"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "swiftmailer.transport.failover"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "swiftmailer.transport.replacementfactory"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "swiftmailer.data_collector"; reason: unused.
@@ -250,7 +250,6 @@ Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Remo
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "swiftmailer.mailer.default.transport.buffer"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "swiftmailer.transport.configurator.default"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "swiftmailer.mailer.default.spool.memory"; reason: unused.
-Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "swiftmailer.mailer.default.transport.spool"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service ".service_locator.4sEa4cJ"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service ".service_locator.gmwRZ3h"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service ".service_locator.G7nCPaT"; reason: unused.

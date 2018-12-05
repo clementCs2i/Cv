@@ -53,7 +53,7 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
     private function doMatch(string $rawPathinfo, array &$allow = array(), array &$allowSchemes = array()): ?array
     {
         $allow = $allowSchemes = array();
-        $pathinfo = rawurldecode($rawPathinfo);
+        $pathinfo = rawurldecode($rawPathinfo) ?: '/';
         $context = $this->context;
         $requestMethod = $canonicalMethod = $context->getMethod();
 
@@ -61,20 +61,24 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             $canonicalMethod = 'GET';
         }
 
-        switch ($pathinfo) {
+        switch ($trimmedPathinfo = '/' !== $pathinfo && '/' === $pathinfo[-1] ? substr($pathinfo, 0, -1) : $pathinfo) {
             default:
                 $routes = array(
-                    '/' => array(array('_route' => 'index', '_controller' => 'App\\Controller\\DefaultController::index'), null, null, null),
-                    '/contact' => array(array('_route' => 'contact', '_controller' => 'App\\Controller\\DefaultController::contact'), null, null, null),
-                    '/competences' => array(array('_route' => 'competences', '_controller' => 'App\\Controller\\DefaultController::competences'), null, null, null),
-                    '/experiences' => array(array('_route' => 'experiences', '_controller' => 'App\\Controller\\DefaultController::experiences'), null, null, null),
-                    '/projets' => array(array('_route' => 'projets', '_controller' => 'App\\Controller\\DefaultController::projets'), null, null, null),
+                    '/' => array(array('_route' => 'index', '_controller' => 'App\\Controller\\DefaultController::index'), null, null, null, false),
+                    '/contact' => array(array('_route' => 'contact', '_controller' => 'App\\Controller\\DefaultController::contact'), null, null, null, false),
+                    '/competences' => array(array('_route' => 'competences', '_controller' => 'App\\Controller\\DefaultController::competences'), null, null, null, false),
+                    '/experiences' => array(array('_route' => 'experiences', '_controller' => 'App\\Controller\\DefaultController::experiences'), null, null, null, false),
+                    '/projets' => array(array('_route' => 'projets', '_controller' => 'App\\Controller\\DefaultController::projets'), null, null, null, false),
                 );
 
-                if (!isset($routes[$pathinfo])) {
+                if (!isset($routes[$trimmedPathinfo])) {
                     break;
                 }
-                list($ret, $requiredHost, $requiredMethods, $requiredSchemes) = $routes[$pathinfo];
+                list($ret, $requiredHost, $requiredMethods, $requiredSchemes, $hasTrailingSlash) = $routes[$trimmedPathinfo];
+
+                if ('/' !== $pathinfo && $hasTrailingSlash !== ('/' === $pathinfo[-1])) {
+                    return null;
+                }
 
                 $hasRequiredScheme = !$requiredSchemes || isset($requiredSchemes[$context->getScheme()]);
                 if ($requiredMethods && !isset($requiredMethods[$canonicalMethod]) && !isset($requiredMethods[$requestMethod])) {
@@ -95,7 +99,7 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         $regexList = array(
             0 => '{^(?'
                     .'|/_error/(\\d+)(?:\\.([^/]++))?(*:35)'
-                .')$}sD',
+                .')(?:/?)$}sD',
         );
 
         foreach ($regexList as $offset => $regex) {
@@ -103,10 +107,14 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 switch ($m = (int) $matches['MARK']) {
                     default:
                         $routes = array(
-                            35 => array(array('_route' => '_twig_error_test', '_controller' => 'twig.controller.preview_error::previewErrorPageAction', '_format' => 'html'), array('code', '_format'), null, null),
+                            35 => array(array('_route' => '_twig_error_test', '_controller' => 'twig.controller.preview_error::previewErrorPageAction', '_format' => 'html'), array('code', '_format'), null, null, false),
                         );
 
-                        list($ret, $vars, $requiredMethods, $requiredSchemes) = $routes[$m];
+                        list($ret, $vars, $requiredMethods, $requiredSchemes, $hasTrailingSlash) = $routes[$m];
+
+                        if ('/' !== $pathinfo && $hasTrailingSlash !== ('/' === $pathinfo[-1])) {
+                            return null;
+                        }
 
                         foreach ($vars as $i => $v) {
                             if (isset($matches[1 + $i])) {
