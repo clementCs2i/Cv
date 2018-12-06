@@ -59,11 +59,65 @@ class __TwigTemplate_c1603cdf3ae8ff262612fa8f1017aaeb0fd6db226f958ff71a33fe0e968
 
         // line 7
         echo "
-accueil du site
+<div class=\"Content text-center\">
 
+<p class=\"h1 mb-0 text-black TitreNom\">Bonjour, je suis <span class=\"ColorRed\">Clément SAVY</span> </p>
 
- test
-
+<p class=\"h3 mb-0 text-black TitreNom\">Développeur logiciel</p>
+<img src=\"";
+        // line 13
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/téléchargement.png"), "html", null, true);
+        echo "\" class=\"img-fluid rounded-circle image\" >
+<p <cite class=\" textcitation ColorRed\">3 ans d'expérience en tant que chef de projets et développeur de logiciel métier</cite></p>
+</div>
+<div class=\"row\">
+        <div class=\"col\">
+                <a class=\"liens\" href=\"experiences\">
+                <div id=\"moncercle\" >
+                        <img src=\"";
+        // line 20
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/experience.png"), "html", null, true);
+        echo " \"class=\"imageExperience\" >
+                        
+                </div>
+                <p class=\"h3 mb-0 text-black NomMenu\">Expériences </p>
+                </a>
+        </div>
+        <div class=\"col\">
+                <a class=\"liens\" href=\"competences\">
+                <div id=\"moncercle\" >
+                        <img src=\"";
+        // line 29
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/compétance.png"), "html", null, true);
+        echo "\" width=\"64\" height=\"64\" class=\"imageComp\" >
+                       
+                </div>
+                <p class=\"h3 mb-0 text-black NomMenu\">Compétances</p>
+            </a>
+        </div>
+        <a class=\"liens\" href=\"projets\">
+        <div class=\"col\"> <div id=\"moncercle\" >
+                <img src=\"";
+        // line 37
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/projet.png"), "html", null, true);
+        echo " \"class=\"imageContact\" >
+                
+        </div>
+        <p class=\"h3 mb-0 text-black NomMenu\">Projets </p>
+    </a>
+    </div>
+    <a class=\"liens\" href=\"contact\">
+        <div class=\"col\"> <div id=\"moncercle\" >
+                <img src=\"";
+        // line 45
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/envelope.png"), "html", null, true);
+        echo " \"class=\"imageContact\" >
+          
+        </div>
+        <p class=\"h3 mb-0 text-black NomMenu\">Contact </p>
+    </a>
+    </div>
+</div>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -82,7 +136,7 @@ accueil du site
 
     public function getDebugInfo()
     {
-        return array (  61 => 7,  55 => 6,  45 => 4,  39 => 3,  15 => 2,);
+        return array (  113 => 45,  102 => 37,  91 => 29,  79 => 20,  69 => 13,  61 => 7,  55 => 6,  45 => 4,  39 => 3,  15 => 2,);
     }
 
     public function getSourceContext()
@@ -94,11 +148,50 @@ accueil du site
  {% endblock %}
 {% block body %}
 
-accueil du site
+<div class=\"Content text-center\">
 
+<p class=\"h1 mb-0 text-black TitreNom\">Bonjour, je suis <span class=\"ColorRed\">Clément SAVY</span> </p>
 
- test
-
+<p class=\"h3 mb-0 text-black TitreNom\">Développeur logiciel</p>
+<img src=\"{{ asset('images/téléchargement.png') }}\" class=\"img-fluid rounded-circle image\" >
+<p <cite class=\" textcitation ColorRed\">3 ans d'expérience en tant que chef de projets et développeur de logiciel métier</cite></p>
+</div>
+<div class=\"row\">
+        <div class=\"col\">
+                <a class=\"liens\" href=\"experiences\">
+                <div id=\"moncercle\" >
+                        <img src=\"{{ asset('images/experience.png') }} \"class=\"imageExperience\" >
+                        
+                </div>
+                <p class=\"h3 mb-0 text-black NomMenu\">Expériences </p>
+                </a>
+        </div>
+        <div class=\"col\">
+                <a class=\"liens\" href=\"competences\">
+                <div id=\"moncercle\" >
+                        <img src=\"{{ asset('images/compétance.png') }}\" width=\"64\" height=\"64\" class=\"imageComp\" >
+                       
+                </div>
+                <p class=\"h3 mb-0 text-black NomMenu\">Compétances</p>
+            </a>
+        </div>
+        <a class=\"liens\" href=\"projets\">
+        <div class=\"col\"> <div id=\"moncercle\" >
+                <img src=\"{{ asset('images/projet.png') }} \"class=\"imageContact\" >
+                
+        </div>
+        <p class=\"h3 mb-0 text-black NomMenu\">Projets </p>
+    </a>
+    </div>
+    <a class=\"liens\" href=\"contact\">
+        <div class=\"col\"> <div id=\"moncercle\" >
+                <img src=\"{{ asset('images/envelope.png') }} \"class=\"imageContact\" >
+          
+        </div>
+        <p class=\"h3 mb-0 text-black NomMenu\">Contact </p>
+    </a>
+    </div>
+</div>
 {% endblock %}
 ", "Pages/Accueil.html.twig", "C:\\Users\\Clément\\Cv\\templates\\Pages\\Accueil.html.twig");
     }

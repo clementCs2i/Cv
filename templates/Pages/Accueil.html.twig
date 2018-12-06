@@ -5,9 +5,48 @@
  {% endblock %}
 {% block body %}
 
-accueil du site
+<div class="Content text-center">
 
+<p class="h1 mb-0 text-black TitreNom">Bonjour, je suis <span class="ColorRed">Clément SAVY</span> </p>
 
- test
-
+<p class="h3 mb-0 text-black TitreNom">Développeur logiciel</p>
+<img src="{{ asset('images/téléchargement.png') }}" class="img-fluid rounded-circle image" >
+<p <cite class=" textcitation ColorRed">3 ans d'expérience en tant que chef de projets et développeur de logiciel métier</cite></p>
+</div>
+<div class="row">
+        <div class="col">
+                <a class="liens" href="experiences">
+                <div id="moncercle" >
+                        <img src="{{ asset('images/experience.png') }} "class="imageExperience" >
+                        
+                </div>
+                <p class="h3 mb-0 text-black NomMenu">Expériences </p>
+                </a>
+        </div>
+        <div class="col">
+                <a class="liens" href="competences">
+                <div id="moncercle" >
+                        <img src="{{ asset('images/compétance.png') }}" width="64" height="64" class="imageComp" >
+                       
+                </div>
+                <p class="h3 mb-0 text-black NomMenu">Compétances</p>
+            </a>
+        </div>
+        <a class="liens" href="projets">
+        <div class="col"> <div id="moncercle" >
+                <img src="{{ asset('images/projet.png') }} "class="imageContact" >
+                
+        </div>
+        <p class="h3 mb-0 text-black NomMenu">Projets </p>
+    </a>
+    </div>
+    <a class="liens" href="contact">
+        <div class="col"> <div id="moncercle" >
+                <img src="{{ asset('images/envelope.png') }} "class="imageContact" >
+          
+        </div>
+        <p class="h3 mb-0 text-black NomMenu">Contact </p>
+    </a>
+    </div>
+</div>
 {% endblock %}

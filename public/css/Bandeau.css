@@ -1,6 +1,6 @@
 .fond{
     background-color: #343a40;
-    height: 99.99%;
+    min-height: 92vh;
 }
 .Contents{
   background-color: #efefef;

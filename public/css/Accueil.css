@@ -14,3 +14,56 @@
 .item5{
     color:rgba(255,255,255,.5)
 }
+.ColorRed{
+    color: #fb383b; 
+  }
+
+.content{
+margin-top: 25px;
+}
+.image{
+    margin-top: 10px;
+}
+#moncercle{
+    background:#343a40;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 0px auto;
+    margin-top: 50px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    text-align: center;
+  }
+  
+  #moncercle:hover{
+    background:#646c73;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 0px auto;
+    margin-top: 50px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    text-align: center;
+  }
+.NomMenu{
+    margin-top: 25px;
+    text-align: center;
+    color: black;
+   
+}
+a, a:hover, a:visited, a:active
+{
+	text-decoration:none;
+}
+.textcitation{
+    font-size: 1.5rem;
+}
+.imageComp{
+    margin-top: 40px;
+}
+.imageContact{
+    margin-top: 40px;
+}
+.imageExperience{
+    margin-top: 40px;
+}

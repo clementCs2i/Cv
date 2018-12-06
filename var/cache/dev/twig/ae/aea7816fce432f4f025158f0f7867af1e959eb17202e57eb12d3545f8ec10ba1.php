@@ -40,6 +40,7 @@ class __TwigTemplate_c0e9e99f5ea44b357be351ecb7e63a363f93580877b7c42f8f30856c6b2
 <p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Date de naissance :</span> 12/04/1995</p>
 <p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Email :</span> Msavy.clement@gmail.com</p>
 <p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Tel :</span> 0635346338</p>
+<p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Expérience :</span> 3 ans</p>
 <p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Diplome :</span> Bac +5 Master MS2I</p>
 <p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Adresse :</span> Lorient 56670</p>
 </div>
@@ -80,6 +81,7 @@ class __TwigTemplate_c0e9e99f5ea44b357be351ecb7e63a363f93580877b7c42f8f30856c6b2
 <p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Date de naissance :</span> 12/04/1995</p>
 <p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Email :</span> Msavy.clement@gmail.com</p>
 <p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Tel :</span> 0635346338</p>
+<p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Expérience :</span> 3 ans</p>
 <p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Diplome :</span> Bac +5 Master MS2I</p>
 <p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Adresse :</span> Lorient 56670</p>
 </div>
