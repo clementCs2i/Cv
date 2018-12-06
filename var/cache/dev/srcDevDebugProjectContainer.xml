@@ -139,7 +139,7 @@
     </service>
     <service id="argument_resolver.service" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
       <tag name="controller.argument_value_resolver" priority="-50"/>
-      <argument type="service" id=".service_locator.4sEa4cJ"/>
+      <argument type="service" id=".service_locator._fJLg.T"/>
     </service>
     <service id="argument_resolver.default" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false">
       <tag name="controller.argument_value_resolver" priority="-100"/>
@@ -268,14 +268,6 @@
       </call>
       <call method="addListener">
         <argument>kernel.request</argument>
-        <argument type="collection">
-          <argument type="service" id="debug.debug_handlers_listener"/>
-          <argument>configure</argument>
-        </argument>
-        <argument>2048</argument>
-      </call>
-      <call method="addListener">
-        <argument>console.command</argument>
         <argument type="collection">
           <argument type="service" id="debug.debug_handlers_listener"/>
           <argument>configure</argument>
@@ -1366,16 +1358,18 @@
         <argument key="twig" type="service" id="twig"/>
       </argument>
     </service>
-    <service id=".service_locator.4sEa4cJ" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator._fJLg.T" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\DefaultController::competences" type="service" id=".service_locator.4Uu6lUw"/>
         <argument key="App\Controller\DefaultController::contact" type="service" id=".service_locator.CMQS5Kb"/>
+        <argument key="App\Controller\DefaultController::dlcv" type="service" id=".service_locator.4Uu6lUw"/>
         <argument key="App\Controller\DefaultController::experiences" type="service" id=".service_locator.4Uu6lUw"/>
         <argument key="App\Controller\DefaultController::index" type="service" id=".service_locator.4Uu6lUw"/>
         <argument key="App\Controller\DefaultController::projets" type="service" id=".service_locator.4Uu6lUw"/>
         <argument key="App\Controller\DefaultController:competences" type="service" id=".service_locator.4Uu6lUw"/>
         <argument key="App\Controller\DefaultController:contact" type="service" id=".service_locator.CMQS5Kb"/>
+        <argument key="App\Controller\DefaultController:dlcv" type="service" id=".service_locator.4Uu6lUw"/>
         <argument key="App\Controller\DefaultController:experiences" type="service" id=".service_locator.4Uu6lUw"/>
         <argument key="App\Controller\DefaultController:index" type="service" id=".service_locator.4Uu6lUw"/>
         <argument key="App\Controller\DefaultController:projets" type="service" id=".service_locator.4Uu6lUw"/>
@@ -1559,7 +1553,7 @@
     <service id="Swift_Mailer" alias="swiftmailer.mailer.default" public="false"/>
     <service id="Swift_Transport" alias="swiftmailer.mailer.default.transport.spool" public="false"/>
     <service id="mailer" alias="swiftmailer.mailer.default" public="true"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.4sEa4cJ"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator._fJLg.T"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem" public="false"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="Psr\Log\LoggerInterface" alias="logger" public="false"/>

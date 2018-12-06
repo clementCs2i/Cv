@@ -95,4 +95,14 @@ class DefaultController extends AbstractController{
         return new Response($twig->render('Pages/projets.html.twig'));
     }
     
+    public function dlcv(Environment $twig) {
+        $fichier = "CV_clement.pdf";
+        $chemin = "" ;
+        header ("Content-type: application/force-download");
+        header ("Content-disposition: filename=$fichier");
+     
+       readFile($chemin . $fichier);
+       
+    }
+    
 }

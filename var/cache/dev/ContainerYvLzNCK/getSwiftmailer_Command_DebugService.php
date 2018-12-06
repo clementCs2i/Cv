@@ -7,8 +7,7 @@ use Symfony\Component\DependencyInjection\Exception\RuntimeException;
 // Returns the private 'swiftmailer.command.debug' shared service.
 
 include_once $this->targetDirs[3].'\\vendor\\symfony\\console\\Command\\Command.php';
-include_once $this->targetDirs[3].'\\vendor\\symfony\\dependency-injection\\ContainerAwareInterface.php';
-include_once $this->targetDirs[3].'\\vendor\\symfony\\framework-bundle\\Command\\ContainerAwareCommand.php';
+include_once $this->targetDirs[3].'\\vendor\\symfony\\swiftmailer-bundle\\Command\\AbstractSwiftMailerCommand.php';
 include_once $this->targetDirs[3].'\\vendor\\symfony\\swiftmailer-bundle\\Command\\DebugCommand.php';
 
 $this->privates['swiftmailer.command.debug'] = $instance = new \Symfony\Bundle\SwiftmailerBundle\Command\DebugCommand();

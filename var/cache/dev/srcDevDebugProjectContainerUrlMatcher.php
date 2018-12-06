@@ -69,6 +69,7 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                     '/competences' => array(array('_route' => 'competences', '_controller' => 'App\\Controller\\DefaultController::competences'), null, null, null, false),
                     '/experiences' => array(array('_route' => 'experiences', '_controller' => 'App\\Controller\\DefaultController::experiences'), null, null, null, false),
                     '/projets' => array(array('_route' => 'projets', '_controller' => 'App\\Controller\\DefaultController::projets'), null, null, null, false),
+                    '/dlcv' => array(array('_route' => 'dlcv', '_controller' => 'App\\Controller\\DefaultController::dlcv'), null, null, null, false),
                 );
 
                 if (!isset($routes[$trimmedPathinfo])) {

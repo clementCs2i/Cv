@@ -13,3 +13,6 @@ experiences:
 projets:
     path: /projets
     controller: App\Controller\DefaultController::projets
+dlcv:
+    path: /dlcv
+    controller: App\Controller\DefaultController::dlcv

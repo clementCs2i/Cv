@@ -26,6 +26,7 @@ class srcDevDebugProjectContainerUrlGenerator extends Symfony\Component\Routing\
         'competences' => array(array(), array('_controller' => 'App\\Controller\\DefaultController::competences'), array(), array(array('text', '/competences')), array(), array()),
         'experiences' => array(array(), array('_controller' => 'App\\Controller\\DefaultController::experiences'), array(), array(array('text', '/experiences')), array(), array()),
         'projets' => array(array(), array('_controller' => 'App\\Controller\\DefaultController::projets'), array(), array(array('text', '/projets')), array(), array()),
+        'dlcv' => array(array(), array('_controller' => 'App\\Controller\\DefaultController::dlcv'), array(), array(array('text', '/dlcv')), array(), array()),
     );
         }
     }

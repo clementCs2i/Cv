@@ -43,6 +43,12 @@ class __TwigTemplate_c0e9e99f5ea44b357be351ecb7e63a363f93580877b7c42f8f30856c6b2
 <p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Expérience :</span> 3 ans</p>
 <p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Diplome :</span> Bac +5 Master MS2I</p>
 <p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Adresse :</span> Lorient 56670</p>
+
+
+<a  class=\"btn btn-primary\" href=\"";
+        // line 20
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("dlcv");
+        echo "\">Télécharger mon CV</a>
 </div>
            ";
         
@@ -62,7 +68,7 @@ class __TwigTemplate_c0e9e99f5ea44b357be351ecb7e63a363f93580877b7c42f8f30856c6b2
 
     public function getDebugInfo()
     {
-        return array (  29 => 2,  26 => 1,);
+        return array (  50 => 20,  29 => 2,  26 => 1,);
     }
 
     public function getSourceContext()
@@ -84,6 +90,9 @@ class __TwigTemplate_c0e9e99f5ea44b357be351ecb7e63a363f93580877b7c42f8f30856c6b2
 <p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Expérience :</span> 3 ans</p>
 <p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Diplome :</span> Bac +5 Master MS2I</p>
 <p class=\"mb-0 text-white  TableInfo textBnadeau\"><span class=\"ColorRed\">Adresse :</span> Lorient 56670</p>
+
+
+<a  class=\"btn btn-primary\" href=\"{{ path('dlcv') }}\">Télécharger mon CV</a>
 </div>
            ", "Bandeaux/BandeauLeft.html.twig", "C:\\Users\\Clément\\Cv\\templates\\Bandeaux\\BandeauLeft.html.twig");
     }
