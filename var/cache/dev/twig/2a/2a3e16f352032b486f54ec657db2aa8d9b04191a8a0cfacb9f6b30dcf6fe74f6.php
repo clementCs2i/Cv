@@ -60,8 +60,25 @@ class __TwigTemplate_a88b5150819da7d2f7a192900fa7eb9f75550aa20cb6462199ac3b7908a
         // line 8
         echo "
 
-experiences
 
+        <div class=\"CentreDiv\">
+        <div id=\"moncercle\" >
+                <img src=\"";
+        // line 13
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/experience.png"), "html", null, true);
+        echo " \"class=\"imageExperience\" >         
+        </div>
+    <span class=\"h2 mb-0 text-black TitreNom\">Expériences <span class=\"ColorRed\">professionnelles</span> </span>
+</div>
+<div class=\"Content \"></div>
+    <p class=\"h5 mb-0 text-black TitreNom\"> <span class=\"ColorRed\">  2016 – 2018</span> 2 ans d'alternance <span class=\"ColorRed\">Master (MS2I) </span>avec l'entreprise ITR <span class=\"ColorRed\"> –> </span> Chef de projet et développeur logiciel</p>
+
+    <p class=\"h5 mb-0 text-black TitreNom\"> <span class=\"ColorRed\">   2015 – 2016</span> 1 ans d'alternance <span class=\"ColorRed\">License (CS2I) </span>avec l'entreprise ITR <span class=\"ColorRed\"> –> </span> développeur logiciel</p>
+    <p class=\"h5 mb-0 text-black TitreNom\"> <span class=\"ColorRed\">   2015 </span> 2 mois stage <span class=\"ColorRed\">BTS (SIO) </span>avec l'entreprise Urbans <span class=\"ColorRed\"> –> </span> développeur WEB</p>
+
+
+
+</div>
 
 
 ";
@@ -82,7 +99,7 @@ experiences
 
     public function getDebugInfo()
     {
-        return array (  61 => 8,  55 => 7,  45 => 5,  39 => 4,  15 => 3,);
+        return array (  68 => 13,  61 => 8,  55 => 7,  45 => 5,  39 => 4,  15 => 3,);
     }
 
     public function getSourceContext()
@@ -96,11 +113,25 @@ experiences
 {% block body %}
 
 
-experiences
 
+        <div class=\"CentreDiv\">
+        <div id=\"moncercle\" >
+                <img src=\"{{ asset('images/experience.png') }} \"class=\"imageExperience\" >         
+        </div>
+    <span class=\"h2 mb-0 text-black TitreNom\">Expériences <span class=\"ColorRed\">professionnelles</span> </span>
+</div>
+<div class=\"Content \"></div>
+    <p class=\"h5 mb-0 text-black TitreNom\"> <span class=\"ColorRed\">  2016 – 2018</span> 2 ans d'alternance <span class=\"ColorRed\">Master (MS2I) </span>avec l'entreprise ITR <span class=\"ColorRed\"> –> </span> Chef de projet et développeur logiciel</p>
+
+    <p class=\"h5 mb-0 text-black TitreNom\"> <span class=\"ColorRed\">   2015 – 2016</span> 1 ans d'alternance <span class=\"ColorRed\">License (CS2I) </span>avec l'entreprise ITR <span class=\"ColorRed\"> –> </span> développeur logiciel</p>
+    <p class=\"h5 mb-0 text-black TitreNom\"> <span class=\"ColorRed\">   2015 </span> 2 mois stage <span class=\"ColorRed\">BTS (SIO) </span>avec l'entreprise Urbans <span class=\"ColorRed\"> –> </span> développeur WEB</p>
+
+
+
+</div>
 
 
 {% endblock %}
-", "Pages/experiences.html.twig", "C:\\wamp64\\www\\CV\\templates\\Pages\\Experiences.html.twig");
+", "Pages/experiences.html.twig", "C:\\Users\\Clément\\Cv\\templates\\Pages\\Experiences.html.twig");
     }
 }

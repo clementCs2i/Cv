@@ -15,3 +15,28 @@
 .item5{
     color:rgba(255,255,255,.5)
 }
+
+#moncercle{
+    background: #343a40;
+    width: 90px;
+    height: 90px;
+    margin-top: -20px;
+    float: left;
+    margin-right: 30px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    text-align: center;
+  }
+  .imageExperience{
+      margin-top: 10px
+  }
+  .CentreDiv{
+    text-align: center!important;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  .Content{
+    margin-top: 135px;
+  }
