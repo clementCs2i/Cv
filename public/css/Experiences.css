@@ -16,20 +16,54 @@
     color:rgba(255,255,255,.5)
 }
 
+
 #moncercle{
-    background: #343a40;
-    width: 90px;
-    height: 90px;
-    margin-top: -20px;
-    float: left;
-    margin-right: 30px;
+    
+    background:#343a40;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 0px auto;
+    margin-top: 50px;
     border-radius: 100%;
     -webkit-border-radius: 100%;
     text-align: center;
   }
-  .imageExperience{
-      margin-top: 10px
-  }
+  .avantTitre {
+    float: left;
+    background: none repeat scroll 0 0 #fb383b;
+    content: "";
+    height: 2px;
+    left: 0;
+    margin-top: 25px;
+    top: 35px;
+    width: 30px;
+
+}
+.apresTitre {
+    float: left;
+    background: none repeat scroll 0 0 #fb383b;
+    content: "";
+    height: 2px;
+    left: 0;
+    margin-top: 25px;
+    top: 35px;
+    width: 30px;
+    margin-left: 15px;
+}
+.imageContact{    margin-top: 10px;;
+}
+.titre{
+    margin-left: 15px;
+    float:left;
+}
+.FormContact{
+    margin-top: 200px;
+}
+.BlocTitre{
+    margin-left: auto;
+margin-right: auto;
+width: 580px;
+}
   .CentreDiv{
     text-align: center!important;
     position: absolute;
@@ -39,4 +73,16 @@
   }
   .Content{
     margin-top: 135px;
+  }
+  .contenuExperiences{
+    margin-left: 10%;
+    margin-top: 150px;
+    width: 80%;
+  
+  }
+  
+  .contenuUneExperiences{
+    margin-left: 10%;
+    width: 90%;
+    
   }
