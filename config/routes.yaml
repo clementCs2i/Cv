@@ -5,8 +5,8 @@ contact:
     path: /contact
     controller: App\Controller\DefaultController::contact
 competences:
-    path: /competences
-    controller: App\Controller\DefaultController::competences
+    path: /formations
+    controller: App\Controller\DefaultController::formations
 experiences:
     path: /experiences
     controller: App\Controller\DefaultController::experiences

@@ -66,7 +66,7 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 $routes = array(
                     '/' => array(array('_route' => 'index', '_controller' => 'App\\Controller\\DefaultController::index'), null, null, null, false),
                     '/contact' => array(array('_route' => 'contact', '_controller' => 'App\\Controller\\DefaultController::contact'), null, null, null, false),
-                    '/competences' => array(array('_route' => 'competences', '_controller' => 'App\\Controller\\DefaultController::competences'), null, null, null, false),
+                    '/formations' => array(array('_route' => 'competences', '_controller' => 'App\\Controller\\DefaultController::formations'), null, null, null, false),
                     '/experiences' => array(array('_route' => 'experiences', '_controller' => 'App\\Controller\\DefaultController::experiences'), null, null, null, false),
                     '/projets' => array(array('_route' => 'projets', '_controller' => 'App\\Controller\\DefaultController::projets'), null, null, null, false),
                     '/dlcv' => array(array('_route' => 'dlcv', '_controller' => 'App\\Controller\\DefaultController::dlcv'), null, null, null, false),

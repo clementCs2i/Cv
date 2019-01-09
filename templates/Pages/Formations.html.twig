@@ -1,0 +1,56 @@
+
+
+{% extends 'Template/template.html.twig' %}
+{% block head %}
+ <link href="{{ asset('css/formations.css') }}" rel="stylesheet">
+ {% endblock %}
+{% block body %}
+
+<div id="moncercle" >
+    <img src="{{ asset('images/formation.png') }} "class="imageContact" >
+    </div>
+    
+    <div  class="BlocTitre text-center ">
+    
+    <div  class="avantTitre">
+    </div>
+    <p class="h1 titre">Formations</p>
+    <div  class="ApresTitre ">
+    </div>
+    </div>
+
+    <div class="h5 textContact text-center" > <span class="ColorRed">MASTER </span>BAC +5</div>    
+    <div class="ContenuFormations"> 
+    <div class="col"> 
+            <div class="row">
+                    <div class="ContenuFormations"> 
+                            <span class="h5 ColorRed">  2016 – 2018</span>
+                            <p class="h5 mb-0 text-black TitreNom"> MASTER manager des systémes d’information et d'infrastructures (MS2I) CCI LORIENT</p>
+                            <p class="h6 mb-0 text-black TitreNom"> Spécialité Développement</p>
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="ContenuFormations"> 
+                            <span class="h5 ColorRed">  2015 – 2016</span>
+                            <p class="h5 mb-0 text-black TitreNom"> LICENSE PRO concepteur de systémes d'information (CS2I) CCI LORIENT</p>
+                            <p class="h6 mb-0 text-black TitreNom"> Spécialité Développement</p>
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="ContenuFormations"> 
+                            <span class="h5 ColorRed">  2013 – 2015</span>
+                            <p class="h5 mb-0 text-black TitreNom"> BTS service d'information aux organisations (SIO) Notre dame de la paix PLOEMEUR</p>
+                            <p class="h6 mb-0 text-black TitreNom"> Spécialité Solutions Logicielles et Applications Métier (SLAM)</p>
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="ContenuFormations"> 
+                            <span class="h5 ColorRed">  2010 – 2013</span>
+                            <p class="h5 mb-0 text-black TitreNom"> BAC science et techniques de l'industrie (STI2D) mention assez bien lycée Colbert Lorient </p>
+                            <p class="h6 mb-0 text-black TitreNom"> Option Innovations technologiques et Eco Conception (ITEC)</p>
+                    </div>
+            </div>
+    </div>
+</div>
+
+{% endblock %}

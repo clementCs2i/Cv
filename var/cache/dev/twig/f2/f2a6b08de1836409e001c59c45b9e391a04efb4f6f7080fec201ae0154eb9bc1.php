@@ -84,15 +84,15 @@ class __TwigTemplate_c1603cdf3ae8ff262612fa8f1017aaeb0fd6db226f958ff71a33fe0e968
                 </a>
         </div>
         <div class=\"col\">
-                <a class=\"liens\" href=\"competences\">
+                <a class=\"liens\" href=\"formations\">
                 <div id=\"moncercle\" >
                         <img src=\"";
         // line 29
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/compétance.png"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/formation.png"), "html", null, true);
         echo "\" width=\"64\" height=\"64\" class=\"imageComp\" >
                        
                 </div>
-                <p class=\"h3 mb-0 text-black NomMenu\">Compétances</p>
+                <p class=\"h3 mb-0 text-black NomMenu\">Formations</p>
             </a>
         </div>
         <a class=\"liens\" href=\"projets\">
@@ -167,12 +167,12 @@ class __TwigTemplate_c1603cdf3ae8ff262612fa8f1017aaeb0fd6db226f958ff71a33fe0e968
                 </a>
         </div>
         <div class=\"col\">
-                <a class=\"liens\" href=\"competences\">
+                <a class=\"liens\" href=\"formations\">
                 <div id=\"moncercle\" >
-                        <img src=\"{{ asset('images/compétance.png') }}\" width=\"64\" height=\"64\" class=\"imageComp\" >
+                        <img src=\"{{ asset('images/formation.png') }}\" width=\"64\" height=\"64\" class=\"imageComp\" >
                        
                 </div>
-                <p class=\"h3 mb-0 text-black NomMenu\">Compétances</p>
+                <p class=\"h3 mb-0 text-black NomMenu\">Formations</p>
             </a>
         </div>
         <a class=\"liens\" href=\"projets\">

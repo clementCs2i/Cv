@@ -3,11 +3,10 @@
 }
 
 .item2{
-    color:rgba(255,255,255)
-
+    color:rgba(255,255,255,.5)
 }
 .item3{
-    color:rgba(255,255,255,.5)
+    color:rgba(255,255,255)
 }
 .item4{
     color:rgba(255,255,255,.5)
@@ -15,8 +14,6 @@
 .item5{
     color:rgba(255,255,255,.5)
 }
-
-
 #moncercle{
     
     background:#343a40;
@@ -62,7 +59,7 @@
 .BlocTitre{
     margin-left: auto;
 margin-right: auto;
-width: 580px;
+width: 300px;
 }
   .CentreDiv{
     text-align: center!important;
@@ -74,14 +71,16 @@ width: 580px;
   .Content{
     margin-top: 135px;
   }
-  .contenuExperiences{
+  .ContenuFormations{
+    text-align: center;
     margin-left: 10%;
-    margin-top: 50px;
+    margin-top: 40px;
     width: 80%;
   
   }
   
-  .contenuUneExperiences{
+  .contenuUneFormations{
+    
     margin-left: 10%;
     margin-top: 20px;
     width: 90%;

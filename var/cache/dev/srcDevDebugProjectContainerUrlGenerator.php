@@ -23,7 +23,7 @@ class srcDevDebugProjectContainerUrlGenerator extends Symfony\Component\Routing\
         '_twig_error_test' => array(array('code', '_format'), array('_controller' => 'twig.controller.preview_error::previewErrorPageAction', '_format' => 'html'), array('code' => '\\d+'), array(array('variable', '.', '[^/]++', '_format'), array('variable', '/', '\\d+', 'code'), array('text', '/_error')), array(), array()),
         'index' => array(array(), array('_controller' => 'App\\Controller\\DefaultController::index'), array(), array(array('text', '/')), array(), array()),
         'contact' => array(array(), array('_controller' => 'App\\Controller\\DefaultController::contact'), array(), array(array('text', '/contact')), array(), array()),
-        'competences' => array(array(), array('_controller' => 'App\\Controller\\DefaultController::competences'), array(), array(array('text', '/competences')), array(), array()),
+        'competences' => array(array(), array('_controller' => 'App\\Controller\\DefaultController::formations'), array(), array(array('text', '/formations')), array(), array()),
         'experiences' => array(array(), array('_controller' => 'App\\Controller\\DefaultController::experiences'), array(), array(array('text', '/experiences')), array(), array()),
         'projets' => array(array(), array('_controller' => 'App\\Controller\\DefaultController::projets'), array(), array(array('text', '/projets')), array(), array()),
         'dlcv' => array(array(), array('_controller' => 'App\\Controller\\DefaultController::dlcv'), array(), array(array('text', '/dlcv')), array(), array()),

@@ -83,8 +83,8 @@ class DefaultController extends AbstractController{
     ));
     }
 
-    public function competences(Environment $twig) {
-        return new Response($twig->render('Pages/competences.html.twig'));
+    public function formations(Environment $twig) {
+        return new Response($twig->render('Pages/formations.html.twig'));
     }
 
     public function experiences(Environment $twig) {

@@ -14,3 +14,61 @@
 .item5{
     color:rgba(255,255,255,.5)
 }
+#moncercle{
+    
+    background:#343a40;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 0px auto;
+    margin-top: 50px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    text-align: center;
+  }
+  .avantTitre {
+    float: left;
+    background: none repeat scroll 0 0 #fb383b;
+    content: "";
+    height: 2px;
+    left: 0;
+    margin-top: 25px;
+    top: 35px;
+    width: 30px;
+
+}
+.apresTitre {
+    float: left;
+    background: none repeat scroll 0 0 #fb383b;
+    content: "";
+    height: 2px;
+    left: 0;
+    margin-top: 25px;
+    top: 35px;
+    width: 30px;
+    margin-left: 15px;
+}
+.imageContact{    margin-top: 19px;;
+}
+.titre{
+    margin-left: 15px;
+    float:left;
+}
+.FormContact{
+    margin-top: 200px;
+}
+.BlocTitre{
+    margin-left: auto;
+margin-right: auto;
+width: 220px;
+}
+  .CentreDiv{
+    text-align: center!important;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  .textContact{
+    color:   #343a40;
+    margin-top: 56px;
+   }
