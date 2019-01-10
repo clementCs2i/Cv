@@ -72,3 +72,18 @@ width: 220px;
     color:   #343a40;
     margin-top: 56px;
    }
+   .ContenuProjets{
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 40px;
+    width: 80%;
+  
+  }
+  
+  .contenuUnprojet{
+    
+    margin-left: 5%;
+    margin-top: 20px;
+    width: 90%;
+    
+  }
