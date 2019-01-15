@@ -81,28 +81,36 @@ class __TwigTemplate_b20ab6a06e9dbfde0aed7cfb641b1aafad206f2b15b245c7ff45fa25938
             <div class=\"row\">
                     <div class=\"ContenuFormations\"> 
                             <span class=\"h5 ColorRed\">  2016 – 2018</span>
-                            <p class=\"h5 mb-0 text-black TitreNom\"> MASTER manager des systémes d’information et d'infrastructures (MS2I) CCI LORIENT</p>
+                            <a class=\"liens\" href=\"https://www.3il-alliance.fr/ms2i/\" target=\"_blank\">
+                            <p class=\"h5 mb-0 text-black TitreNom\"> MASTER manager des systémes d’information et d'infrastructures (MS2I) CCI LORIENT </p>
+                            </a>
                             <p class=\"h6 mb-0 text-black TitreNom\"> Spécialité Développement</p>
                     </div>
             </div>
             <div class=\"row\">
                     <div class=\"ContenuFormations\"> 
                             <span class=\"h5 ColorRed\">  2015 – 2016</span>
+                            <a class=\"liens\" href=\"https://www.3il-alliance.fr/csi/\" target=\"_blank\">
                             <p class=\"h5 mb-0 text-black TitreNom\"> LICENSE PRO concepteur de systémes d'information (CS2I) CCI LORIENT</p>
+                            </a>
                             <p class=\"h6 mb-0 text-black TitreNom\"> Spécialité Développement</p>
                     </div>
             </div>
             <div class=\"row\">
                     <div class=\"ContenuFormations\"> 
                             <span class=\"h5 ColorRed\">  2013 – 2015</span>
+                            <a class=\"liens\" href=\"http://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/BTS-Services-informatiques-aux-organisations-option-B-solutions-logicielles-et-applications-metiers/\" target=\"_blank\">
                             <p class=\"h5 mb-0 text-black TitreNom\"> BTS service d'information aux organisations (SIO) Notre dame de la paix PLOEMEUR</p>
+                            </a>
                             <p class=\"h6 mb-0 text-black TitreNom\"> Spécialité Solutions Logicielles et Applications Métier (SLAM)</p>
                     </div>
             </div>
             <div class=\"row\">
                     <div class=\"ContenuFormations\"> 
                             <span class=\"h5 ColorRed\">  2010 – 2013</span>
-                            <p class=\"h5 mb-0 text-black TitreNom\"> BAC science et techniques de l'industrie (STI2D) mention assez bien lycée Colbert Lorient </p>
+                            <a class=\"liens\" href=\"http://lycee-colbert-lorient.com/index.php?cat=1&pageid=217&cursub=12\" target=\"_blank\">
+                            <p class=\"h5 mb-0 text-black TitreNom\"> BAC sciences et technologies de l'industrie et du développement durable (STI2D) mention assez bien lycée Colbert Lorient </p>
+                            </a>
                             <p class=\"h6 mb-0 text-black TitreNom\"> Option Innovations technologiques et Eco Conception (ITEC)</p>
                     </div>
             </div>
@@ -159,28 +167,36 @@ class __TwigTemplate_b20ab6a06e9dbfde0aed7cfb641b1aafad206f2b15b245c7ff45fa25938
             <div class=\"row\">
                     <div class=\"ContenuFormations\"> 
                             <span class=\"h5 ColorRed\">  2016 – 2018</span>
-                            <p class=\"h5 mb-0 text-black TitreNom\"> MASTER manager des systémes d’information et d'infrastructures (MS2I) CCI LORIENT</p>
+                            <a class=\"liens\" href=\"https://www.3il-alliance.fr/ms2i/\" target=\"_blank\">
+                            <p class=\"h5 mb-0 text-black TitreNom\"> MASTER manager des systémes d’information et d'infrastructures (MS2I) CCI LORIENT </p>
+                            </a>
                             <p class=\"h6 mb-0 text-black TitreNom\"> Spécialité Développement</p>
                     </div>
             </div>
             <div class=\"row\">
                     <div class=\"ContenuFormations\"> 
                             <span class=\"h5 ColorRed\">  2015 – 2016</span>
+                            <a class=\"liens\" href=\"https://www.3il-alliance.fr/csi/\" target=\"_blank\">
                             <p class=\"h5 mb-0 text-black TitreNom\"> LICENSE PRO concepteur de systémes d'information (CS2I) CCI LORIENT</p>
+                            </a>
                             <p class=\"h6 mb-0 text-black TitreNom\"> Spécialité Développement</p>
                     </div>
             </div>
             <div class=\"row\">
                     <div class=\"ContenuFormations\"> 
                             <span class=\"h5 ColorRed\">  2013 – 2015</span>
+                            <a class=\"liens\" href=\"http://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/BTS-Services-informatiques-aux-organisations-option-B-solutions-logicielles-et-applications-metiers/\" target=\"_blank\">
                             <p class=\"h5 mb-0 text-black TitreNom\"> BTS service d'information aux organisations (SIO) Notre dame de la paix PLOEMEUR</p>
+                            </a>
                             <p class=\"h6 mb-0 text-black TitreNom\"> Spécialité Solutions Logicielles et Applications Métier (SLAM)</p>
                     </div>
             </div>
             <div class=\"row\">
                     <div class=\"ContenuFormations\"> 
                             <span class=\"h5 ColorRed\">  2010 – 2013</span>
-                            <p class=\"h5 mb-0 text-black TitreNom\"> BAC science et techniques de l'industrie (STI2D) mention assez bien lycée Colbert Lorient </p>
+                            <a class=\"liens\" href=\"http://lycee-colbert-lorient.com/index.php?cat=1&pageid=217&cursub=12\" target=\"_blank\">
+                            <p class=\"h5 mb-0 text-black TitreNom\"> BAC sciences et technologies de l'industrie et du développement durable (STI2D) mention assez bien lycée Colbert Lorient </p>
+                            </a>
                             <p class=\"h6 mb-0 text-black TitreNom\"> Option Innovations technologiques et Eco Conception (ITEC)</p>
                     </div>
             </div>

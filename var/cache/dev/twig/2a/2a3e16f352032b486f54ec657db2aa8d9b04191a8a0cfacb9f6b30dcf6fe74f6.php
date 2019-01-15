@@ -71,7 +71,7 @@ class __TwigTemplate_a88b5150819da7d2f7a192900fa7eb9f75550aa20cb6462199ac3b7908a
         
         <div  class=\"avantTitre\">
         </div>
-        <p class=\"h1 titre\">Expériences professionels</p>
+        <p class=\"h1 titre\">Expériences professionnels</p>
         <div  class=\"ApresTitre \">
         </div>
         </div>
@@ -86,7 +86,7 @@ class __TwigTemplate_a88b5150819da7d2f7a192900fa7eb9f75550aa20cb6462199ac3b7908a
                          <p class=\"h5 mb-0 text-black TitreNom\"> Chef de projet et développeur logiciel</p>
                          <span class=\" h5 ColorRed\">  2016 – 2018</span>
                         <p class=\"h6 mb-0 text-black TitreNom\"> Alternance de deux ans, Master (MS2I) avec l'entreprise ITR </p>
-                        <p class=\"h6 mb-0 text-black TitreNom\">Durant ces deux ans, mon travail a consisté à la prise en charge et la réalisation de logiciel métier pour des PME désirant acquérir une solution spécifique et adapté à leurs besoins. Pour mener à bien ces projets j'ai été positionné comme chef de projet technique j'avais comme responsabilité la réalisation de cahier des charges ainsi que de cahier de recette utilisateur, pour ce faire j'ai été amené à réaliser diverses réunions cliente, dans un premier temps pour formaliser leur besoin et attente et dans un deuxième temps m'assurer que les fonctionnalités développées corresponder parfaitement à leurs besoins. Mon travail était également de piloter techniquement la réalisation des projets, j'avais pour responsabilité l'équipe de développement composée de deux à trois personnes, mon travail était d'encadrer le développement des différentes fonctionnalités et de m'assurer du bon fonctionnement des applications suite aux phases de développements et de tests          </p>
+                        <p class=\"h6 mb-0 text-black TitreNom\">Durant ces deux ans, mon travail a consisté à la prise en charge et la réalisation de logiciel métier pour des PME désirant acquérir une solution spécifique et adapté à leurs besoins. Pour mener à bien ces projets, j'ai été positionné comme chef de projet technique, j'avais comme responsabilité la réalisation de cahier des charges ainsi que de cahiers de recette utilisateur, pour ce faire j'ai été amené à réaliser diverses réunions clientes, dans un premier temps pour formaliser leurs besoins et attentes et dans un deuxième temps m'assurer que les fonctionnalités développées correspondes parfaitement à leurs besoins. Mon travail était également de piloter techniquement la réalisation des projets, j'avais pour responsabilité l'équipe de développement composée de deux à trois personnes, mon travail était d'encadrer le développement des différentes fonctionnalités et de m'assurer du bon fonctionnement des applications suite aux phases de développements et de tests          </p>
                      </div>
                 </div>
 
@@ -95,7 +95,7 @@ class __TwigTemplate_a88b5150819da7d2f7a192900fa7eb9f75550aa20cb6462199ac3b7908a
                                 <p class=\"h5 mb-0 text-black TitreNom\"> Développeur logiciel</p>
                                 <span class=\"h5 ColorRed\">  2015 – 2016</span>
                                 <p class=\"h6 mb-0 text-black TitreNom\"> Alternance d'un an, License (CS2I) avec l'entreprise ITR </p>
-                                <p class=\"h6 mb-0 text-black TitreNom\"> Durant cette premiére années de travail chez ITR mon travail à consisté à maintenir et à développer des applications métier sous l'AGL windev, je suis intervenu sur divert projet logiciel pour réaliser des tâche comme  la réalisation d'interface utilisateur, conception de base de données, réalisation de maquette utilisateur, conception de test unitaire et développement du logiciel en génarale     </p>
+                                <p class=\"h6 mb-0 text-black TitreNom\"> Durant cette première année de travail chez ITR mon travail à consisté à maintenir et à développer des applications métiers sous l'AGL Windev, je suis intervenu sur divers projets logiciels pour réaliser des tâche comme la réalisation d'interfaces utilisateur, conception de base de données, réalisation de maquettes utilisateur, conception de tests unitaire et développement du logiciel en général     </p>
                         </div>
                 </div>
                     
@@ -104,7 +104,7 @@ class __TwigTemplate_a88b5150819da7d2f7a192900fa7eb9f75550aa20cb6462199ac3b7908a
                                 <p class=\"h5 mb-0 text-black TitreNom\">Développeur WEB</p>
                                 <span class=\"h5 ColorRed\">  2015</span>
                                <p class=\"h6 mb-0 text-black TitreNom\"> Satge de deux mois, BTS  (SIO) avec l'entreprise URBANS </p>
-                               <p class=\"h6 mb-0 text-black TitreNom\"> Pendant ce stage  j'ai pu decouvrir le fonctionnement d'une entreprise de développement d'application, ma pricipale mission fut de réaliser un plugin de test unitaire sous le CMS Drupal 7  en PHP afin de verifier le bon fonctionnement de divers web service utiliser par des applications android et IOS  </p>
+                               <p class=\"h6 mb-0 text-black TitreNom\"> Pendant ce stage, j'ai pu découvrir le fonctionnement d'une entreprise de développement d'application, ma principale mission fut de réaliser un plugin de test unitaire sous le CMS Drupal 7 en PHP afin de vérifier le bon fonctionnement de divers web services utilisés par des applications mobiles tels que Android et IOS  </p>
 
                             </div>
                 </div>
@@ -154,7 +154,7 @@ class __TwigTemplate_a88b5150819da7d2f7a192900fa7eb9f75550aa20cb6462199ac3b7908a
         
         <div  class=\"avantTitre\">
         </div>
-        <p class=\"h1 titre\">Expériences professionels</p>
+        <p class=\"h1 titre\">Expériences professionnels</p>
         <div  class=\"ApresTitre \">
         </div>
         </div>
@@ -169,7 +169,7 @@ class __TwigTemplate_a88b5150819da7d2f7a192900fa7eb9f75550aa20cb6462199ac3b7908a
                          <p class=\"h5 mb-0 text-black TitreNom\"> Chef de projet et développeur logiciel</p>
                          <span class=\" h5 ColorRed\">  2016 – 2018</span>
                         <p class=\"h6 mb-0 text-black TitreNom\"> Alternance de deux ans, Master (MS2I) avec l'entreprise ITR </p>
-                        <p class=\"h6 mb-0 text-black TitreNom\">Durant ces deux ans, mon travail a consisté à la prise en charge et la réalisation de logiciel métier pour des PME désirant acquérir une solution spécifique et adapté à leurs besoins. Pour mener à bien ces projets j'ai été positionné comme chef de projet technique j'avais comme responsabilité la réalisation de cahier des charges ainsi que de cahier de recette utilisateur, pour ce faire j'ai été amené à réaliser diverses réunions cliente, dans un premier temps pour formaliser leur besoin et attente et dans un deuxième temps m'assurer que les fonctionnalités développées corresponder parfaitement à leurs besoins. Mon travail était également de piloter techniquement la réalisation des projets, j'avais pour responsabilité l'équipe de développement composée de deux à trois personnes, mon travail était d'encadrer le développement des différentes fonctionnalités et de m'assurer du bon fonctionnement des applications suite aux phases de développements et de tests          </p>
+                        <p class=\"h6 mb-0 text-black TitreNom\">Durant ces deux ans, mon travail a consisté à la prise en charge et la réalisation de logiciel métier pour des PME désirant acquérir une solution spécifique et adapté à leurs besoins. Pour mener à bien ces projets, j'ai été positionné comme chef de projet technique, j'avais comme responsabilité la réalisation de cahier des charges ainsi que de cahiers de recette utilisateur, pour ce faire j'ai été amené à réaliser diverses réunions clientes, dans un premier temps pour formaliser leurs besoins et attentes et dans un deuxième temps m'assurer que les fonctionnalités développées correspondes parfaitement à leurs besoins. Mon travail était également de piloter techniquement la réalisation des projets, j'avais pour responsabilité l'équipe de développement composée de deux à trois personnes, mon travail était d'encadrer le développement des différentes fonctionnalités et de m'assurer du bon fonctionnement des applications suite aux phases de développements et de tests          </p>
                      </div>
                 </div>
 
@@ -178,7 +178,7 @@ class __TwigTemplate_a88b5150819da7d2f7a192900fa7eb9f75550aa20cb6462199ac3b7908a
                                 <p class=\"h5 mb-0 text-black TitreNom\"> Développeur logiciel</p>
                                 <span class=\"h5 ColorRed\">  2015 – 2016</span>
                                 <p class=\"h6 mb-0 text-black TitreNom\"> Alternance d'un an, License (CS2I) avec l'entreprise ITR </p>
-                                <p class=\"h6 mb-0 text-black TitreNom\"> Durant cette premiére années de travail chez ITR mon travail à consisté à maintenir et à développer des applications métier sous l'AGL windev, je suis intervenu sur divert projet logiciel pour réaliser des tâche comme  la réalisation d'interface utilisateur, conception de base de données, réalisation de maquette utilisateur, conception de test unitaire et développement du logiciel en génarale     </p>
+                                <p class=\"h6 mb-0 text-black TitreNom\"> Durant cette première année de travail chez ITR mon travail à consisté à maintenir et à développer des applications métiers sous l'AGL Windev, je suis intervenu sur divers projets logiciels pour réaliser des tâche comme la réalisation d'interfaces utilisateur, conception de base de données, réalisation de maquettes utilisateur, conception de tests unitaire et développement du logiciel en général     </p>
                         </div>
                 </div>
                     
@@ -187,7 +187,7 @@ class __TwigTemplate_a88b5150819da7d2f7a192900fa7eb9f75550aa20cb6462199ac3b7908a
                                 <p class=\"h5 mb-0 text-black TitreNom\">Développeur WEB</p>
                                 <span class=\"h5 ColorRed\">  2015</span>
                                <p class=\"h6 mb-0 text-black TitreNom\"> Satge de deux mois, BTS  (SIO) avec l'entreprise URBANS </p>
-                               <p class=\"h6 mb-0 text-black TitreNom\"> Pendant ce stage  j'ai pu decouvrir le fonctionnement d'une entreprise de développement d'application, ma pricipale mission fut de réaliser un plugin de test unitaire sous le CMS Drupal 7  en PHP afin de verifier le bon fonctionnement de divers web service utiliser par des applications android et IOS  </p>
+                               <p class=\"h6 mb-0 text-black TitreNom\"> Pendant ce stage, j'ai pu découvrir le fonctionnement d'une entreprise de développement d'application, ma principale mission fut de réaliser un plugin de test unitaire sous le CMS Drupal 7 en PHP afin de vérifier le bon fonctionnement de divers web services utilisés par des applications mobiles tels que Android et IOS  </p>
 
                             </div>
                 </div>
