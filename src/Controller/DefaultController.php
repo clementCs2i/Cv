@@ -78,21 +78,21 @@ class DefaultController extends AbstractController{
     )));
     }
 
-    return $this->render('Pages/contact.html.twig', array(
+    return $this->render('Pages/Contact.html.twig', array(
         'form' => $form->createView(),
     ));
     }
 
     public function formations(Environment $twig) {
-        return new Response($twig->render('Pages/formations.html.twig'));
+        return new Response($twig->render('Pages/Formations.html.twig'));
     }
 
     public function experiences(Environment $twig) {
-        return new Response($twig->render('Pages/experiences.html.twig'));
+        return new Response($twig->render('Pages/Experiences.html.twig'));
     }
 
     public function projets(Environment $twig) {
-        return new Response($twig->render('Pages/projets.html.twig'));
+        return new Response($twig->render('Pages/Projets.html.twig'));
     }
     
     public function dlcv(Environment $twig) {
