@@ -53,7 +53,7 @@ class DefaultController extends AbstractController{
         $Email = $form->getData();
         $message = (new \Swift_Message('Méssage site web CV'))
         ->setFrom($Email->getAdresseMail())
-        ->setTo('msavy.clement@gmail.com')
+        ->setTo('contact.clement.savy@gmail.com')
         ->setBody(
             $this->renderView(
                 'Emails/EmailConatct.html.twig',
@@ -73,7 +73,7 @@ class DefaultController extends AbstractController{
         ->add('success', 'Merci, Votre méssage a été correctement envoyé')
     ;
 
-    return new Response($twig->render('Pages/contact.html.twig', array(
+    return new Response($twig->render('Pages/Contact.html.twig', array(
         'form' => $form->createView(),
     )));
     }

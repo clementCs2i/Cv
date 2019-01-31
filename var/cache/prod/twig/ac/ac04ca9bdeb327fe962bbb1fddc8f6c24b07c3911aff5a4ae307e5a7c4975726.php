@@ -12,7 +12,7 @@ class __TwigTemplate_7ec14287dac512e82aab4032df654f678a147e340eedae30be5a9e987bb
         $this->source = $this->getSourceContext();
 
         // line 3
-        $this->parent = $this->loadTemplate("Template/template.html.twig", "Pages/Contact.html.twig", 3);
+        $this->parent = $this->loadTemplate("Template/Template.html.twig", "Pages/Contact.html.twig", 3);
         $this->blocks = array(
             'head' => array($this, 'block_head'),
             'body' => array($this, 'block_body'),
@@ -21,7 +21,7 @@ class __TwigTemplate_7ec14287dac512e82aab4032df654f678a147e340eedae30be5a9e987bb
 
     protected function doGetParent(array $context)
     {
-        return "Template/template.html.twig";
+        return "Template/Template.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -85,7 +85,7 @@ class __TwigTemplate_7ec14287dac512e82aab4032df654f678a147e340eedae30be5a9e987bb
 <div  class=\"ApresTitre \">
 </div>
 </div>
- <div class=\"h5 textContact text-center\" >Mail: <span class=\"ColorRed\">msavy.clement@gmail.com</span>  Tel : <span class=\"ColorRed\">0635346338</span></div>    
+ <div class=\"h5 textContact text-center\" >Mail: <span class=\"ColorRed\">contact@clement-savy.fr</span>  Tel : <span class=\"ColorRed\">0635346338</span></div>    
 
 ";
         // line 32

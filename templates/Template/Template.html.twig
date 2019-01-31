@@ -8,6 +8,7 @@
             </title>
           <meta charset="UTF-8">
         {% block stylesheets %}
+       
           <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" id="bootstrap-css">
           <link href="{{ asset('css/NavBar.css') }}" rel="stylesheet">
           <link href="{{ asset('css/Bandeau.css') }}" rel="stylesheet">
@@ -20,8 +21,9 @@
         {% block javascripts %}
          <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
         {% endblock %}
+        <link rel="icon" type="image/png" href="images/iconCv.png" />
                         {% block head %}
-                            
+          
                         {% endblock %}
         </head>
         <body>

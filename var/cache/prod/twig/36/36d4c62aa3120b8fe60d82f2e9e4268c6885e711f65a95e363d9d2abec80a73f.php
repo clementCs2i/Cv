@@ -12,7 +12,7 @@ class __TwigTemplate_febba0c77d03563390062638847f25d4eaad992a234595f9c2a524326f5
         $this->source = $this->getSourceContext();
 
         // line 2
-        $this->parent = $this->loadTemplate("Template/template.html.twig", "Pages/Projets.html.twig", 2);
+        $this->parent = $this->loadTemplate("Template/Template.html.twig", "Pages/Projets.html.twig", 2);
         $this->blocks = array(
             'head' => array($this, 'block_head'),
             'body' => array($this, 'block_body'),
@@ -21,7 +21,7 @@ class __TwigTemplate_febba0c77d03563390062638847f25d4eaad992a234595f9c2a524326f5
 
     protected function doGetParent(array $context)
     {
-        return "Template/template.html.twig";
+        return "Template/Template.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
