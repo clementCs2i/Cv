@@ -1,6 +1,6 @@
 <?php
 
-namespace ContainerKSbWlhq;
+namespace Container6PjTQAv;
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -498,7 +498,7 @@ class srcProdProjectContainer extends Container
             'swiftmailer.mailer.default.transport.smtp.port' => 465,
             'swiftmailer.mailer.default.transport.smtp.host' => 'smtp.gmail.com',
             'swiftmailer.mailer.default.transport.smtp.username' => 'contact.clement.savy@gmail.com',
-            'swiftmailer.mailer.default.transport.smtp.password' => 'tackolas56',
+            'swiftmailer.mailer.default.transport.smtp.password' => NULL,
             'swiftmailer.mailer.default.transport.smtp.auth_mode' => 'login',
             'swiftmailer.mailer.default.transport.smtp.timeout' => 30,
             'swiftmailer.mailer.default.transport.smtp.source_ip' => NULL,

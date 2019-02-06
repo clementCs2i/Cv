@@ -23,7 +23,7 @@ class __TwigTemplate_e986c315b6f042152670158ec2624ff127bda60801b2ca2c8a38c301a53
         echo "<div class=\"text-center\">
                 <img src=\"";
         // line 2
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/téléchargement.png"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/photoProfil.jpg"), "html", null, true);
         echo "\" class=\"img-fluid rounded-circle\" alt=\"Responsive image\">
                 <blockquote class=\"blockquote text-center\">
   <p class=\"mb-0 text-white textNameRes\">Clément SAVY</p>

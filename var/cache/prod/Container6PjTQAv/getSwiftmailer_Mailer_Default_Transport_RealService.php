@@ -31,7 +31,7 @@ include_once $this->targetDirs[3].'\\vendor\\swiftmailer\\swiftmailer\\lib\\clas
 
 $a = new \Swift_Transport_Esmtp_AuthHandler(array(0 => new \Swift_Transport_Esmtp_Auth_CramMd5Authenticator(), 1 => new \Swift_Transport_Esmtp_Auth_LoginAuthenticator(), 2 => new \Swift_Transport_Esmtp_Auth_PlainAuthenticator(), 3 => new \Swift_Transport_Esmtp_Auth_NTLMAuthenticator()));
 $a->setUsername('contact.clement.savy@gmail.com');
-$a->setPassword('tackolas56');
+$a->setPassword(NULL);
 $a->setAuthMode('login');
 
 $this->services['swiftmailer.mailer.default.transport.real'] = $instance = new \Swift_Transport_EsmtpTransport(new \Swift_Transport_StreamBuffer(new \Swift_StreamFilters_StringReplacementFilterFactory()), array(0 => $a), ($this->privates['swiftmailer.mailer.default.transport.eventdispatcher'] ?? $this->privates['swiftmailer.mailer.default.transport.eventdispatcher'] = new \Swift_Events_SimpleEventDispatcher()));
