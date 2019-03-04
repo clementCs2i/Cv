@@ -62,7 +62,7 @@
 .BlocTitre{
     margin-left: auto;
 margin-right: auto;
-width: 580px;
+width: 615px;
 }
   .CentreDiv{
     text-align: center!important;
@@ -90,4 +90,10 @@ width: 580px;
   .textContact{
     color:   #343a40;
     margin-top: 56px;
+   }
+   .textaligne{
+    text-align: justify;
+   }
+   .blockExeperiences{
+     margin-bottom: 50px;
    }
