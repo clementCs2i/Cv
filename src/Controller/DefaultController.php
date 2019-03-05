@@ -96,7 +96,7 @@ class DefaultController extends AbstractController{
     }
     
     public function dlcv(Environment $twig) {
-        $fichier = "CV_Clément-SAVY.pdf";
+        $fichier = "CV Clément SAVY.pdf";
         $chemin = "" ;
         header ("Content-type: application/force-download");
         header ("Content-disposition: filename=$fichier");
